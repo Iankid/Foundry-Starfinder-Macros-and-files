@@ -7,7 +7,38 @@ if (canvas.tokens.controlled.length === 0)
 
 const effectasleep = "systems/sfrpg/icons/conditions/asleep.png";
 const effectblinded = "systems/sfrpg/icons/conditions/blinded.png";
+const effectbleedingfx = "systems/sfrpg/icons/conditions/bleeding.png";
+const effectburning = "systems/sfrpg/icons/conditions/burning.png";
+const effectconfused = "systems/sfrpg/icons/conditions/confused.png";
+const effectcowering = "systems/sfrpg/icons/conditions/cowering.png";
+const effectdazed = "systems/sfrpg/icons/conditions/dazed.png";
+const effectdazzled = "systems/sfrpg/icons/conditions/dazzled.png";
+const effectdead = "systems/sfrpg/icons/conditions/dead.png";
+const effectdeafened = "systems/sfrpg/icons/conditions/deafened.png";
+const effectdying = "systems/sfrpg/icons/conditions/dying.png";
+const effectencumbered = "systems/sfrpg/icons/conditions/encumbered.png";
+const effectentangled = "systems/sfrpg/icons/conditions/entangled.png";
+const effectexhausted = "systems/sfrpg/icons/conditions/exhausted.png";
+const effectfatigued = "systems/sfrpg/icons/conditions/fatigued.png";
 const effectflatfooted = "systems/sfrpg/icons/conditions/flatfooted.png";
+const effectfrightened = "systems/sfrpg/icons/conditions/frightened.png";
+const effectgrappled = "systems/sfrpg/icons/conditions/grappled.png";
+const effecthelpless = "systems/sfrpg/icons/conditions/helpless.png";
+const effectnauseated = "systems/sfrpg/icons/conditions/nauseated.png";
+const effectoffkilter = "systems/sfrpg/icons/conditions/offkilter.png";
+const effectofftarget = "systems/sfrpg/icons/conditions/offtarget.png";
+const effectoverburdened = "systems/sfrpg/icons/conditions/overburdened.png";
+const effectpanicked = "systems/sfrpg/icons/conditions/panicked.png";
+const effectparalyzed = "systems/sfrpg/icons/conditions/paralyzed.png";
+const effectpinned = "systems/sfrpg/icons/conditions/pinned.png";
+const effectprone = "systems/sfrpg/icons/conditions/prone.png";
+const effectshaken = "systems/sfrpg/icons/conditions/shaken.png";
+const effectsickened = "systems/sfrpg/icons/conditions/sickened.png";
+const effectstable = "systems/sfrpg/icons/conditions/stable.png";
+const effectstaggered = "systems/sfrpg/icons/conditions/staggered.png";
+const effectstunned = "systems/sfrpg/icons/conditions/stunned.png";
+const effectunconsious = "systems/sfrpg/icons/conditions/unconscious.png";
+
 let applyChanges = false;
 new Dialog({
   title: `Conditions & FX`,
@@ -162,7 +193,6 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "bleeding":
               token.actor.update({"data.conditions.bleeding" : true});
-const effectbleedingfx = "systems/sfrpg/icons/conditions/bleeding.png";
 token.toggleEffect(effectbleedingfx);
 var params =
     [{
@@ -223,8 +253,7 @@ TokenMagic.addFiltersOnSelected(params);
             break;
                       case "bleeding2":
 token.actor.update({"data.conditions.bleeding" : false});
-const effectbleeding2 = "systems/sfrpg/icons/conditions/bleeding.png";
-token.toggleEffect(effectbleeding2);
+token.toggleEffect(effectbleeding);
 token.TMFXdeleteFilters("bleeding");
             break;
             case "blinded":
@@ -294,7 +323,6 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
           case "burning":
 token.actor.update({"data.conditions.burning" : true});
-const effectburning = "systems/sfrpg/icons/conditions/burning.png";
 token.toggleEffect(effectburning);
 var params =
 [{
@@ -373,13 +401,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
             break;
                       case "burning2":
 token.actor.update({"data.conditions.burning" : false});
-const effectburning2 = "systems/sfrpg/icons/conditions/burning.png";
-token.toggleEffect(effectburning2);
+token.toggleEffect(effectburning);
 token.TMFXdeleteFilters("Burningcond");
         break;
             case "confused":
                 token.actor.update({"data.conditions.confused" : true});
-                const effectconfused = "systems/sfrpg/icons/conditions/confused.png";
                 token.toggleEffect(effectconfused);
                 var params = 
 [{
@@ -433,13 +459,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "confused2":
                 token.actor.update({"data.conditions.confused" : false});
-                const effectconfused2 = "systems/sfrpg/icons/conditions/confused.png";
-                token.toggleEffect(effectconfused2);
+                token.toggleEffect(effectconfused);
                 token.TMFXdeleteFilters("confusedFX");
         break;
             case "cowering":
                 token.actor.update({"data.conditions.cowering" : true});
-                const effectcowering = "systems/sfrpg/icons/conditions/cowering.png";
                 token.toggleEffect(effectcowering);
                 var params = 
 [{
@@ -538,13 +562,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "cowering2":
                 token.actor.update({"data.conditions.cowering" : false});
-                const effectcowering2 = "systems/sfrpg/icons/conditions/cowering.png";
-                token.toggleEffect(effectcowering2);
+                token.toggleEffect(effectcowering);
                 token.TMFXdeleteFilters("coweringFX");
         break;
             case "dazed":
                 token.actor.update({"data.conditions.dazed" : true});
-                const effectdazed = "systems/sfrpg/icons/conditions/dazed.png";
                 token.toggleEffect(effectdazed);
                 var params =
 [{
@@ -623,13 +645,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "dazed2":
                 token.actor.update({"data.conditions.dazed" : false});
-                const effectdazed2 = "systems/sfrpg/icons/conditions/dazed.png";
-                token.toggleEffect(effectdazed2);
+                token.toggleEffect(effectdazed);
                 token.TMFXdeleteFilters("dazedFX");
         break;
                 case "dazzled":
               token.actor.update({"data.conditions.dazzled" : true});
-const effectdazzled = "systems/sfrpg/icons/conditions/dazzled.png";
 token.toggleEffect(effectdazzled);
 var params =
 [{
@@ -656,13 +676,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
             break;
                       case "dazzled2":
 token.actor.update({"data.conditions.dazzled" : false});
-const effectdazzled2 = "systems/sfrpg/icons/conditions/dazzled.png";
-token.toggleEffect(effectdazzled2);
+token.toggleEffect(effectdazzled);
 token.TMFXdeleteFilters("dazzledFX");
         break;
             case "dead":
                 token.actor.update({"data.conditions.dead" : true});
-                const effectdead = "systems/sfrpg/icons/conditions/dead.png";
                 token.toggleEffect(effectdead);
                 var params =
     [{
@@ -685,13 +703,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "dead2":
                 token.actor.update({"data.conditions.dead" : false});
-                const effectdead2 = "systems/sfrpg/icons/conditions/dead.png";
-                token.toggleEffect(effectdead2);
+                token.toggleEffect(effectdead);
                 token.TMFXdeleteFilters("deadFX");
         break;
             case "deafened":
                 token.actor.update({"data.conditions.deafened" : true});
-                const effectdeafened = "systems/sfrpg/icons/conditions/deafened.png";
                 token.toggleEffect(effectdeafened);
                 var params =
 [{
@@ -740,13 +756,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "deafened2":
                 token.actor.update({"data.conditions.deafened" : false});
-                const effectdeafened2 = "systems/sfrpg/icons/conditions/deafened.png";
-                token.toggleEffect(effectdeafened2);
+                token.toggleEffect(effectdeafened);
                 token.TMFXdeleteFilters("deafenedFX");
         break;
             case "dying":
                 token.actor.update({"data.conditions.dying" : true});
-                const effectdying = "systems/sfrpg/icons/conditions/dying.png";
                 token.toggleEffect(effectdying);
                 var params =
     [{
@@ -777,23 +791,19 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "dying2":
                 token.actor.update({"data.conditions.dying" : false});
-                const effectdying2 = "systems/sfrpg/icons/conditions/dying.png";
-                token.toggleEffect(effectdying2);
+                token.toggleEffect(effectdying);
                 token.TMFXdeleteFilters("dyingFX");
         break;
             case "encumbered":
                 token.actor.update({"data.conditions.encumbered" : true});
-                const effectencumbered = "systems/sfrpg/icons/conditions/encumbered.png";
                 token.toggleEffect(effectencumbered);
         break;
             case "encumbered2":
                 token.actor.update({"data.conditions.encumbered" : false});
-                const effectencumbered2 = "systems/sfrpg/icons/conditions/encumbered.png";
-                token.toggleEffect(effectencumbered2);
+                token.toggleEffect(effectencumbered);
         break;
             case "entangled":
                 token.actor.update({"data.conditions.entangled" : true});
-                const effectentangled = "systems/sfrpg/icons/conditions/entangled.png";
                 token.toggleEffect(effectentangled);
                 var params =
 [{
@@ -842,29 +852,24 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "entangled2":
                 token.actor.update({"data.conditions.entangled" : false});
-                const effectentangled2 = "systems/sfrpg/icons/conditions/entangled.png";
-                token.toggleEffect(effectentangled2);
+                token.toggleEffect(effectentangled);
                 token.TMFXdeleteFilters("entangledFX");
         break;
             case "exhausted":
                 token.actor.update({"data.conditions.exhausted" : true});
-                const effectexhausted = "systems/sfrpg/icons/conditions/exhausted.png";
                 token.toggleEffect(effectexhausted);
         break;
             case "exhausted2":
                 token.actor.update({"data.conditions.exhausted" : false});
-                const effectexhausted2 = "systems/sfrpg/icons/conditions/exhausted.png";
-                token.toggleEffect(effectexhausted2);
+                token.toggleEffect(effectexhausted);
         break;
             case "fatigued":
                 token.actor.update({"data.conditions.fatigued" : true});
-                const effectfatigued = "systems/sfrpg/icons/conditions/fatigued.png";
                 token.toggleEffect(effectfatigued);
         break;
             case "fatigued2":
                 token.actor.update({"data.conditions.fatigued" : false});
-                const effectfatigued2 = "systems/sfrpg/icons/conditions/fatigued.png";
-                token.toggleEffect(effectfatigued2);
+                token.toggleEffect(effectfatigued);
         break;
             case "flatfooted":
                 token.actor.update({"data.conditions.flatfooted" : true});
@@ -895,13 +900,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "flatfooted2":
                 token.actor.update({"data.conditions.flatfooted" : false});
-                const effectflatfooted2 = "systems/sfrpg/icons/conditions/flatfooted.png";
-                token.toggleEffect(effectflatfooted2);
+                token.toggleEffect(effectflatfooted);
                 token.TMFXdeleteFilters("flatfootedFX");
         break;
             case "frightened":
                 token.actor.update({"data.conditions.frightened" : true});
-                const effectfrightened = "systems/sfrpg/icons/conditions/frightened.png";
                 token.toggleEffect(effectfrightened);
                 var params = 
 [{
@@ -994,33 +997,27 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "frightened2":
                 token.actor.update({"data.conditions.frightened" : false});
-                const effectfrightened2 = "systems/sfrpg/icons/conditions/frightened.png";
-                token.toggleEffect(effectfrightened2);
+                token.toggleEffect(effectfrightened);
                 token.TMFXdeleteFilters("frightenedFX");
         break;
             case "grappled":
                 token.actor.update({"data.conditions.grappled" : true});
-                const effectgrappled = "systems/sfrpg/icons/conditions/grappled.png";
                 token.toggleEffect(effectgrappled);
         break;
             case "grappled2":
                 token.actor.update({"data.conditions.grappled" : false});
-                const effectgrappled2 = "systems/sfrpg/icons/conditions/grappled.png";
-                token.toggleEffect(effectgrappled2);
+                token.toggleEffect(effectgrappled);
         break;
             case "helpless":
                 token.actor.update({"data.conditions.helpless" : true});
-                const effecthelpless = "systems/sfrpg/icons/conditions/helpless.png";
                 token.toggleEffect(effecthelpless);
         break;
             case "helpless2":
                 token.actor.update({"data.conditions.helpless" : false});
-                const effecthelpless2 = "systems/sfrpg/icons/conditions/helpless.png";
-                token.toggleEffect(effecthelpless2);
+                token.toggleEffect(effecthelpless);
         break;
             case "nauseated":
                 token.actor.update({"data.conditions.nauseated" : true});
-                const effectnauseated = "systems/sfrpg/icons/conditions/nauseated.png";
                 token.toggleEffect(effectnauseated);
                  var params =
 [{
@@ -1078,43 +1075,35 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "nauseated2":
                 token.actor.update({"data.conditions.nauseated" : false});
-                const effectnauseated2 = "systems/sfrpg/icons/conditions/nauseated.png";
-                token.toggleEffect(effectnauseated2);
+                token.toggleEffect(effectnauseated);
                 token.TMFXdeleteFilters("nauseatedFX");
         break;
             case "offkilter":
                 token.actor.update({"data.conditions.offkilter" : true});
-                const effectoffkilter = "systems/sfrpg/icons/conditions/offkilter.png";
                 token.toggleEffect(effectoffkilter);
         break;
             case "offkilter2":
                 token.actor.update({"data.conditions.offkilter" : false});
-                const effectoffkilter2 = "systems/sfrpg/icons/conditions/offkilter.png";
-                token.toggleEffect(effectoffkilter2);
+                token.toggleEffect(effectoffkilter);
         break;
             case "offtarget":
                 token.actor.update({"data.conditions.offtarget" : true});
-                const effectofftarget = "systems/sfrpg/icons/conditions/offtarget.png";
                 token.toggleEffect(effectofftarget);
         break;
             case "offtarget2":
                 token.actor.update({"data.conditions.offtarget" : false});
-                const effectofftarget2 = "systems/sfrpg/icons/conditions/offtarget.png";
-                token.toggleEffect(effectofftarget2);
+                token.toggleEffect(effectofftarget);
         break;
             case "overburdened":
                 token.actor.update({"data.conditions.overburdened" : true});
-                const effectoverburdened = "systems/sfrpg/icons/conditions/overburdened.png";
                 token.toggleEffect(effectoverburdened);
         break;
             case "overburdened2":
                 token.actor.update({"data.conditions.overburdened" : false});
-                const effectoverburdened2 = "systems/sfrpg/icons/conditions/overburdened.png";
-                token.toggleEffect(effectoverburdened2);
+                token.toggleEffect(effectoverburdened);
         break;
             case "panicked":
                 token.actor.update({"data.conditions.panicked" : true});
-                const effectpanicked = "systems/sfrpg/icons/conditions/panicked.png";
                 token.toggleEffect(effectpanicked);
                 var params =
 [{
@@ -1248,43 +1237,35 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "panicked2":
                 token.actor.update({"data.conditions.panicked" : false});
-                const effectpanicked2 = "systems/sfrpg/icons/conditions/panicked.png";
-                token.toggleEffect(effectpanicked2);
+                token.toggleEffect(effectpanicked);
                 token.TMFXdeleteFilters("panickedFX");
         break;
             case "paralyzed":
                 token.actor.update({"data.conditions.paralyzed" : true});
-                const effectparalyzed = "systems/sfrpg/icons/conditions/paralyzed.png";
                 token.toggleEffect(effectparalyzed);
         break;
             case "paralyzed2":
                 token.actor.update({"data.conditions.paralyzed" : false});
-                const effectparalyzed2 = "systems/sfrpg/icons/conditions/paralyzed.png";
-                token.toggleEffect(effectparalyzed2);
+                token.toggleEffect(effectparalyzed);
         break;
             case "pinned":
                 token.actor.update({"data.conditions.pinned" : true});
-                const effectpinned = "systems/sfrpg/icons/conditions/pinned.png";
                 token.toggleEffect(effectpinned);
         break;
             case "pinned2":
                 token.actor.update({"data.conditions.pinned" : false});
-                const effectpinned2 = "systems/sfrpg/icons/conditions/pinned.png";
-                token.toggleEffect(effectpinned2);
+                token.toggleEffect(effectpinned);
         break;
             case "prone":
                 token.actor.update({"data.conditions.prone" : true});
-                const effectprone = "systems/sfrpg/icons/conditions/prone.png";
                 token.toggleEffect(effectprone);
         break;
             case "prone2":
                 token.actor.update({"data.conditions.prone" : false});
-                const effectprone2 = "systems/sfrpg/icons/conditions/prone.png";
-                token.toggleEffect(effectprone2);
+                token.toggleEffect(effectprone);
         break;
           case "shaken":
               token.actor.update({"data.conditions.shaken" : true});
-const effectshaken = "systems/sfrpg/icons/conditions/shaken.png";
 token.toggleEffect(effectshaken);
 var params =
 [{
@@ -1338,13 +1319,11 @@ TokenMagic.addUpdateFiltersOnSelected(params);
             break;
                       case "shaken2":
 token.actor.update({"data.conditions.shaken" : false});
-const effectshaken2 = "systems/sfrpg/icons/conditions/shaken.png";
-token.toggleEffect(effectshaken2);
+token.toggleEffect(effectshaken);
 token.TMFXdeleteFilters("ShakenFX");
         break;
             case "sickened":
                 token.actor.update({"data.conditions.sickened" : true});
-                const effectsickened = "systems/sfrpg/icons/conditions/sickened.png";
                 token.toggleEffect(effectsickened);
                 var params =
 [{
@@ -1383,49 +1362,40 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "sickened2":
                 token.actor.update({"data.conditions.sickened" : false});
-                const effectsickened2 = "systems/sfrpg/icons/conditions/sickened.png";
-                token.toggleEffect(effectsickened2);
+                token.toggleEffect(effectsickened);
                 token.TMFXdeleteFilters("sickenedFX");
         break;
             case "stable":
                 token.actor.update({"data.conditions.stable" : true});
-                const effectstable = "systems/sfrpg/icons/conditions/stable.png";
                 token.toggleEffect(effectstable);
         break;
             case "stable2":
                 token.actor.update({"data.conditions.stable" : false});
-                const effectstable2 = "systems/sfrpg/icons/conditions/stable.png";
-                token.toggleEffect(effectstable2);
+                token.toggleEffect(effectstable);
         break;
             case "staggered":
                 token.actor.update({"data.conditions.staggered" : true});
-                const effectstaggered = "systems/sfrpg/icons/conditions/staggered.png";
                 token.toggleEffect(effectstaggered);
         break;
             case "staggered2":
                 token.actor.update({"data.conditions.staggered" : false});
-                const effectstaggered2 = "systems/sfrpg/icons/conditions/staggered.png";
-                token.toggleEffect(effectstaggered2);
+                token.toggleEffect(effectstaggered);
         break;
             case "stunned":
                 token.actor.update({"data.conditions.stunned" : true});
-                const effectstunned = "systems/sfrpg/icons/conditions/stunned.png";
                 token.toggleEffect(effectstunned);
         break;
             case "stunned2":
                 token.actor.update({"data.conditions.stunned" : false});
-                const effectstunned2 = "systems/sfrpg/icons/conditions/stunned.png";
-                token.toggleEffect(effectstunned2);
+                token.toggleEffect(effectstunned);
         break;
-            case "unconsious":
-                token.actor.update({"data.conditions.unconsious" : true});
-                const effectunconsious = "systems/sfrpg/icons/conditions/unconsious.png";
+            case "unconscious":
+                token.actor.update({"data.conditions.unconscious" : true});
                 token.toggleEffect(effectunconsious);
         break;
-            case "unconsious2":
-                token.actor.update({"data.conditions.unconsious" : false});
-                const effectunconsious2 = "systems/sfrpg/icons/conditions/unconsious.png";
-                token.toggleEffect(effectunconsious2);
+            case "unconscious2":
+                token.actor.update({"data.conditions.unconscious" : false});
+                token.toggleEffect(effectunconsious);
         break;
           case "removeall":
 // Delete all filters on the selected tokens/tiles
