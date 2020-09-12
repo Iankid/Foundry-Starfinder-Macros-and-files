@@ -1,0 +1,156 @@
+// Open a dialog for quickly changing token vision parameters of the controlled tokens.
+// This macro was written by @Sky#9453 and edited for Starfinder by Iankid
+// https://github.com/Sky-Captain-13/foundry
+
+if (canvas.tokens.controlled.length === 0)
+  return ui.notifications.error("Please select a token first");
+
+let applyChanges = false;
+new Dialog({
+  title: `Token Vision Configuration`,
+  content: `
+    <form>
+      <div class="form-group">
+        <label>Vision Type:</label>
+        <select id="vision-type" name="vision-type">
+          <option value="nochange">No Change</option>
+          <option value="dark0">Self</option>
+          <option value="dark60">Darkvision (60 ft)</option>
+          <option value="dark120">Darkvision (120 ft)</option>
+          <option value="dark180">Darkvision (180 ft)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Light Source:</label>
+        <select id="light-source" name="light-source">
+          <option value="nochange">No Change</option>
+          <option value="none">None</option>
+          <option value="commlight">Comm Light (15 ft.)</option>
+          <option value="flashlight">Flashlight (20 ft.)</option>
+          <option value="lantern">Lantern (10 ft. Radius)</option>
+          <option value="spotlight">Spotlight (100 ft.)</option>
+          <option value="beacon">Beacon (50 ft. Radius)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Blinded:</label>
+        <select id="blinded" name="blinded">
+          <option value="nochange">No Change</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </form>
+    `,
+  buttons: {
+    yes: {
+      icon: "<i class='fas fa-check'></i>",
+      label: `Apply Changes`,
+      callback: () => applyChanges = true
+    },
+    no: {
+      icon: "<i class='fas fa-times'></i>",
+      label: `Cancel Changes`
+    },
+  },
+  default: "yes",
+  close: html => {
+    if (applyChanges) {
+      for ( let token of canvas.tokens.controlled ) {
+        let visionType = html.find('[name="vision-type"]')[0].value || "none";
+        let lightSource = html.find('[name="light-source"]')[0].value || "none";
+        let blinded = html.find('[name="blinded"]')[0].value || "none";
+        let dimSight = 0;
+        let brightSight = 0;
+        let sightAngle = 360;
+        let dimLight = 0;
+        let brightLight = 0;
+        let lightAngle = 360;
+        let lockRotation = token.data.lockRotation;
+        // Get Vision Type Values
+        switch (visionType) {
+          case "dark0":
+            dimSight = 0;
+            brightSight = 0;
+            break;
+          case "dark60":
+            dimSight = 0;
+            brightSight = 60;
+            break;
+          case "dark120":
+            dimSight = 0;
+            brightSight = 120;
+            break;
+          case "dark180":
+            dimSight = 0;
+            brightSight = 180;
+            break;
+          case "nochange":
+          default:
+            dimSight = token.data.dimSight;
+            brightSight = token.data.brightSight;
+        }
+        // Get Light Source Values
+        switch (lightSource) {
+          case "none":
+            dimLight = 0;
+            brightLight = 0;
+            break;
+          case "commlight":
+            dimLight = 15;
+            brightLight = 10;
+            lightAngle = 45;
+            break;
+          case "flashlight":
+            dimLight = 20;
+            brightLight = 15;
+            lightAngle = 45;
+            break;
+          case "lantern":
+            dimLight = 10;
+            brightLight = 5;
+            break;
+          case "spotlight":
+            dimLight = 100;
+            brightLight = 95;
+            lightAngle = 45;
+            break;
+          case "beacon":
+            dimLight = 50;
+            brightLight = 45;
+            break;
+          case "nochange":
+          default:
+            dimLight = token.data.dimLight;
+            brightLight = token.data.brightLight;
+            lightAngle = token.data.lightAngle;
+            lockRotation = token.data.lockRotation;
+        }
+                // Get Light Source Values
+        switch (blinded) {
+          case "yes":
+            sightAngle = 1;
+            break;
+          case "no":
+            sightAngle = 360;
+            break;
+          case "nochange":
+          default:
+            sightAngle = token.data.sightAngle;
+        }
+        // Update Token
+        console.log(token);
+        token.update({
+          vision: true,
+          dimSight: dimSight,
+          brightSight: brightSight,
+          sightAngle: sightAngle,
+          dimLight: dimLight,
+          brightLight:  brightLight,
+          lightAngle: lightAngle,
+          lockRotation: lockRotation
+        });
+      }
+    }
+  }
+}).render(true);
