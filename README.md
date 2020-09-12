@@ -1,5 +1,4 @@
 # Foundry-Starfinder-Macros
-Personal Macros
 
 All Macros listed are for use in VTT Foundry, Starfinder Ruleset.
 
