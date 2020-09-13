@@ -55,7 +55,7 @@ new Dialog({
           <option value="bleeding2">Bleeding Off</option>
           <option value="blinded">Blinded</option>
           <option value="blinded2">Blinded Off</option>
-          <option value="burning">Burning On</option>
+          <option value="burning">Burning</option>
           <option value="burning2">Burning Off</option>
           <option value="confused">Confused</option>
           <option value="confused2">Confused Off</option>
