@@ -1,3 +1,4 @@
+(async ()=> {
 // pulls the save of every player listed in the folder named "Player Characters" within the Actors directory, then whisper the GM with the results
 // Original author - @Erogroth#7134
 // Edited for Starfinder by Iankid
@@ -24,3 +25,4 @@ if(messageContent !== '') {
   };
   ChatMessage.create(chatData, {});
 }
+})();
