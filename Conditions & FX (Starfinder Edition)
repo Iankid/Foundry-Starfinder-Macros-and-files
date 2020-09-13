@@ -1,4 +1,4 @@
-(()=>{
+(async ()=> {
 // Open a dialog for quickly adding or removing conditions and FX on the controlled tokens.
 // REQUIRES Token Magic FX mod: https://foundryvtt.com/packages/tokenmagic/
 // This macro was based on code by @Erogroth#7134. This version by @Iankid with the help of @SecretFire
@@ -8,7 +8,7 @@ if (canvas.tokens.controlled.length === 0)
 
 const effectasleep = "systems/sfrpg/icons/conditions/asleep.png";
 const effectblinded = "systems/sfrpg/icons/conditions/blinded.png";
-const effectbleedingfx = "systems/sfrpg/icons/conditions/bleeding.png";
+const effectbleeding = "systems/sfrpg/icons/conditions/bleeding.png";
 const effectburning = "systems/sfrpg/icons/conditions/burning.png";
 const effectconfused = "systems/sfrpg/icons/conditions/confused.png";
 const effectcowering = "systems/sfrpg/icons/conditions/cowering.png";
@@ -194,7 +194,7 @@ TokenMagic.addUpdateFiltersOnSelected(params);
         break;
             case "bleeding":
               token.actor.update({"data.conditions.bleeding" : true});
-token.toggleEffect(effectbleedingfx);
+token.toggleEffect(effectbleeding);
 var params =
     [{
         filterType: "splash",
