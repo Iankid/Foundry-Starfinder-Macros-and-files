@@ -1,0 +1,14 @@
+{
+  "_id": "l5jFkSphZmpfe5xx",
+  "name": "Critical Hit cards",
+  "sort": 0,
+  "flags": {
+    "exportSource": {
+      "world": "path-past-the-stars",
+      "system": "sfrpg",
+      "coreVersion": "0.6.5",
+      "systemVersion": "0.4.1.0"
+    }
+  },
+  "content": "<p><strong>PLAYER USE </strong></p>\n<p>Whenever a PC scores a critical hit, that characters player draws one card from the deck and applies the effect appropriate to that attack's type (energy, kinetic, or spell), or may choose the \"extreme blow' effect if it matches the attack's damage type (acid, bludgeoning, cold, electricity, fire, piercing, slashing, sonic) or attack type (melee, ranged, or spell).</p>\n<p><strong>GM USE</strong></p>\n<p>The GM can use one of three different methods to determine when they draw cards to modify critical hits. Since the effects on each card can be deadly against player characters, we recommend using the first option.</p>\n<p>&bull; Option 1: The GM draws a card only when a major villain, creature, or NPC scores a critical hit <br />&bull; Option 2: Using this deck becomes an option that can be given to NPCs as a special ability, and the GM only draws cards for NPCs with that ability. <br />&bull; Option 3: The GM draws a card when any creature or NPC scores a critical hit.&nbsp;</p>\n<p><strong>ADDITIONAL RULES&nbsp;</strong></p>\n<p>&bull; A critical hit deals double damage to the target unless the entry says it deals normal damage or triple damage, <br />&bull; Any effect listed as a Crit Effect is considered a critical hit effect. If your attack already has a critical hit effect, you may apply its normal critical hit effect or the card effect, but not both. <br />&bull; If an effect is listed as a Bonus Effect, apply it in addition to the attack's other critical hit effects. <br />&bull; Effects that scale by level use a weapon's item level, a spell's caster level, Or the character's level for supernatural effects as the critical hit effect's level. Round fractions up. If the effect is based on a spell, this critical hit effect level is also used as the caster level for any calculations not defined on the card.<br />&bull; The save DC for an effect inflicted by a PC is 1/2 character level + key ability score. For NPCs the save DC is determined by the NPC's ability DC for its array and level. <br />&bull; An effect that uses the name of an existing critical hit effect (Starfinder Core Rulebook 182) follows the rules for that critical hit effect.&nbsp;<br />&bull; An effect that lasts until healed ends once the recipient regains Hit Points equal to the damage dealt by the attack.&nbsp;</p>\n<p>&nbsp;</p>"
+}
