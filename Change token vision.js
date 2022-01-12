@@ -71,14 +71,18 @@ let visionDialog = async function() {
                 break;
             case "low0":
                 update.dimSight = 200;
+                update.brightSight = 0;
                 break;
             case "dark60":
+                update.dimSight = 1;
                 update.brightSight = 60;
                 break;
             case "dark120":
+                update.dimSight = 1;
                 update.brightSight = 120;
                 break;
             case "dark180":
+                update.dimSight = 1;
                 update.brightSight = 180;
                 break;
         }
@@ -88,34 +92,37 @@ let visionDialog = async function() {
                 update.light = {};
                 update.light.dim = 0;
                 update.light.bright = 0;
+                update.light.angle = 360;
                 break;
             case "commlight":
                 update.light = {};
                 update.light.dim = 15;
                 update.light.bright = 13.5;
-                update.angle = 45;
+                update.light.angle = 45;
                 break;
             case "flashlight":
                 update.light = {};
                 update.light.dim = 20;
                 update.light.bright = 18.5;
-                update.angle = 45;
+                update.light.angle = 45;
                 break;
             case "lantern":
                 update.light = {};
                 update.light.dim = 10;
                 update.light.bright = 8.5;
+                update.light.angle = 360;
                 break;
             case "spotlight":
                 update.light = {};
                 update.light.dim = 100;
                 update.light.bright = 100;
-                update.angle = 45;
+                update.light.angle = 45;
                 break;
             case "beacon":
                 update.light = {};
                 update.light.dim = 50;
                 update.light.bright = 48.5;
+                update.light.angle = 360;
                 break;
         }
 
