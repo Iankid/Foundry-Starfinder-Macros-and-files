@@ -1,15 +1,15 @@
 // Open a dialog for quickly changing token vision parameters of the controlled tokens.
-// This macro was written by @Sky#9453 and edited for Starfinder by Iankid, further editted by Kek.
+// This macro was written by @Sky#9453 and edited for Starfinder by Iankid, further edited by Kek, then CptTwinkie fixed it.
 // https://github.com/Sky-Captain-13/foundry
-  
-(async ()=> {
-  let macro_token = canvas.tokens.controlled !== 0 ? token : canvas.tokens.placeables.find(i=> i.data.actorId === character.id);
 
-  if(!macro_token) return;
-  
-  new Dialog({
-    title: `Token Vision Configuration`,
-    content: `
+let visionDialog = async function() {
+    let macro_token = canvas.tokens.controlled !== 0 ? token : canvas.tokens.placeables.find(i=> i.data.actorId === character.id);
+    if(!macro_token)
+        return;
+
+    new Dialog({
+        title: `Token Vision Configuration`,
+        content: `
       <form>
         <div class="form-group">
           <label>Vision Type:</label>
@@ -44,83 +44,100 @@
         </div>
       </form>
       `,
-    buttons: {
-      yes: {
-        icon: "<i class='fas fa-check'></i>",
-        label: `Apply Changes`,
-        callback: (html) => { applyChanges(html);}
-      },
-      no: {
-        icon: "<i class='fas fa-times'></i>",
-        label: `Cancel Changes`
-      },
+        buttons: {
+            yes: {
+                icon: "<i class='fas fa-check'></i>",
+                label: `Apply Changes`,
+                callback: (html) => { applyChanges(html);}
+            },
+            no: {
+                icon: "<i class='fas fa-times'></i>",
+                label: `Cancel Changes`
+            },
+        }
+    }).render(true);
+
+    function applyChanges(html)  {
+        let visionType = html.find('[name="vision-type"]')[0].value || "nochange";
+        let lightSource = html.find('[name="light-source"]')[0].value || "nochange";
+        let blinded = html.find('[name="blinded"]')[0].value || "nochange";
+
+        let update = {};
+
+        switch (visionType) {
+            case "dark0":
+                update.dimSight = 1;
+                update.brightSight = 0;
+                break;
+            case "low0":
+                update.dimSight = 200;
+                update.brightSight = 0;
+                break;
+            case "dark60":
+                update.dimSight = 1;
+                update.brightSight = 60;
+                break;
+            case "dark120":
+                update.dimSight = 1;
+                update.brightSight = 120;
+                break;
+            case "dark180":
+                update.dimSight = 1;
+                update.brightSight = 180;
+                break;
+        }
+
+        switch (lightSource) {
+            case "none":
+                update.light = {};
+                update.light.dim = 0;
+                update.light.bright = 0;
+                update.light.angle = 360;
+                break;
+            case "commlight":
+                update.light = {};
+                update.light.dim = 15;
+                update.light.bright = 13.5;
+                update.light.angle = 45;
+                break;
+            case "flashlight":
+                update.light = {};
+                update.light.dim = 20;
+                update.light.bright = 18.5;
+                update.light.angle = 45;
+                break;
+            case "lantern":
+                update.light = {};
+                update.light.dim = 10;
+                update.light.bright = 8.5;
+                update.light.angle = 360;
+                break;
+            case "spotlight":
+                update.light = {};
+                update.light.dim = 100;
+                update.light.bright = 100;
+                update.light.angle = 45;
+                break;
+            case "beacon":
+                update.light = {};
+                update.light.dim = 50;
+                update.light.bright = 48.5;
+                update.light.angle = 360;
+                break;
+        }
+
+        switch (blinded) {
+            case "yes":
+                update.vision = false;
+                break;
+            case "no":
+                update.vision = true;
+                break;
+        }
+
+        macro_token.document.update(update);
+        macro_token.updateSource();
     }
-  }).render(true);
+}
 
-  function applyChanges(html)
-  {
-    let visionType = html.find('[name="vision-type"]')[0].value || "nochange";
-    let lightSource = html.find('[name="light-source"]')[0].value || "nochange";
-    let blinded = html.find('[name="blinded"]')[0].value || "nochange";
-
-    let update = {};
-
-    switch (visionType) {
-      case "dark0":
-        update.dimSight = 1;
-        update.brightSight = 0;
-        break;
-      case "low0":
-        update.dimSight = 200;
-        break;
-      case "dark60":
-        update.brightSight = 60;
-        break;
-      case "dark120":
-        update.brightSight = 120;
-        break;
-      case "dark180":
-        update.brightSight = 180;
-        break;
-    }
-    switch (lightSource) {
-      case "none":
-        update.dimLight = 0;
-        update.brightLight = 0;
-        break;
-      case "commlight":
-        update.dimLight = 15;
-        update.brightLight = 13.5;
-        update.lightAngle = 45;
-        break;
-      case "flashlight":
-        update.dimLight = 20;
-        update.brightLight = 18.5;
-        update.lightAngle = 45;
-        break;
-      case "lantern":
-        update.dimLight = 10;
-        update.brightLight = 8.5;
-        break;
-      case "spotlight":
-        update.dimLight = 100;
-        update.brightLight = 98.5;
-        update.lightAngle = 45;
-        break;
-      case "beacon":
-        update.dimLight = 50;
-        update.brightLight = 48.5;
-        break;
-    }
-
-    switch (blinded) {
-      case "yes":
-        update.vision = false;
-        break;
-      case "no":
-        update.vision = true;
-        break;
-    }
-
-    macro_token.update(update);
-  }
+await visionDialog();
