@@ -6,4 +6,4 @@ Any macros that access a set of characters without selection will be looking in 
 
 Conditions & FX macro requires Token Magic FX mod: https://foundryvtt.com/packages/tokenmagic/
 
-The import settings for Automated Animations use the free JB2A animations and the Games Audio Bundles. Audio references currently reflect Forge's file structure. Despite this, the audio will still work outside Forge without editing
+The import settings for Automated Animations use the free JB2A animations https://foundryvtt.com/packages/JB2A_DnD5e and the Games Audio Bundles https://foundryvtt.com/packages/gAudioBundle-1 2 3 and 4. Audio references currently reflect Forge's file structure. Despite this, the audio will still work outside Forge without editing
