@@ -1,0 +1,2057 @@
+{
+  "version": 3,
+  "search": "",
+  "melee": {
+    "0": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Dagger",
+      "meleeType": "weapon",
+      "animation": "dagger",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "1": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Flurry of Blows",
+      "meleeType": "weapon",
+      "animation": "flurryofblows",
+      "variant": "physical",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "2": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Greataxe",
+      "meleeType": "weapon",
+      "animation": "greataxe",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "3": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Greatclub",
+      "meleeType": "weapon",
+      "animation": "greatclub",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "4": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Greatsword",
+      "meleeType": "weapon",
+      "animation": "greatsword",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "5": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Handaxe",
+      "meleeType": "weapon",
+      "animation": "handaxe",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "6": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Sword",
+      "meleeType": "weapon",
+      "animation": "sword",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "7": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Mace",
+      "meleeType": "weapon",
+      "animation": "mace",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "8": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Maul",
+      "meleeType": "weapon",
+      "animation": "maul",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "9": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Spear",
+      "meleeType": "weapon",
+      "animation": "spear",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "10": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Rapier",
+      "meleeType": "weapon",
+      "animation": "rapier",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "11": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Unarmed Strike",
+      "meleeType": "weapon",
+      "animation": "unarmedstrike",
+      "variant": "physical",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "12": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Doshko",
+      "meleeType": "weapon",
+      "animation": "greataxe",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-2/assets/src/Gore/Melee_Sword_Attack_04.ogg",
+          "delay": 1550,
+          "volume": null
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "13": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Pike",
+      "meleeType": "weapon",
+      "animation": "halberd",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-2/assets/src/Gore/Melee_Sword_Attack_04.ogg",
+          "delay": 1550,
+          "volume": null
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    }
+  },
+  "range": {
+    "0": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Crossbow",
+      "type": "weapon",
+      "animation": "bolt",
+      "variant": "physical",
+      "color": "orange",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "1": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Bow",
+      "type": "weapon",
+      "animation": "arrow",
+      "variant": "regular",
+      "color": "regular",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "2": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Disintegrate",
+      "type": "spell",
+      "animation": "disintegrate",
+      "variant": "01",
+      "color": "green",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "3": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Eldritch Blast",
+      "type": "spell",
+      "animation": "eldritchblast",
+      "variant": "01",
+      "color": "purple",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "4": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Fire Bolt",
+      "type": "spell",
+      "animation": "firebolt",
+      "variant": "01",
+      "color": "orange",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "5": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Guiding Bolt",
+      "type": "spell",
+      "animation": "guidingbolt",
+      "variant": "01",
+      "color": "blueyellow",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "6": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Magic Missile",
+      "type": "spell",
+      "animation": "magicmissile",
+      "variant": "01",
+      "color": "purple",
+      "repeat": 3,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "7": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Ray of Frost",
+      "type": "spell",
+      "animation": "rayoffrost",
+      "variant": "01",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "8": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Scorching Ray",
+      "type": "spell",
+      "animation": "scorchingray",
+      "variant": "01",
+      "color": "orange",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "9": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Witch Bolt",
+      "type": "spell",
+      "animation": "witchbolt",
+      "variant": "01",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "10": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Rifle",
+      "type": "weapon",
+      "animation": "snipe",
+      "variant": "blue",
+      "color": "60ft",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-2/assets/src/Guns%20and%20Explosions/Gun_Rifle_Sniper_Shot_01.ogg",
+          "delay": null,
+          "volume": null
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "11": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Array",
+      "type": "spell",
+      "animation": "scorchingray",
+      "variant": "01",
+      "color": "orange",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-2/assets/src/Circuits/Circuits_Noise_Burst_Short_Servo_2.ogg",
+          "delay": null,
+          "volume": null
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "12": {
+      "hidden": false,
+      "anim2d": false,
+      "name": "Pistol",
+      "type": "weapon",
+      "animation": "bullet",
+      "variant": "1",
+      "color": "orange",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-2/assets/src/Guns%20and%20Explosions/Gun_Revolver_Pistol_Shot_04.ogg",
+          "delay": null,
+          "volume": null
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "13": {
+      "hidden": false,
+      "anim2d": false,
+      "name": "Arc Pistol",
+      "type": "spell",
+      "animation": "chainlightning",
+      "variant": "primary",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-2/assets/src/Electrostatic%20Field/Impact_003.ogg",
+          "delay": 600,
+          "volume": null
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "14": {
+      "hidden": false,
+      "anim2d": false,
+      "name": "Arc Rifle",
+      "type": "spell",
+      "animation": "chainlightning",
+      "variant": "primary",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-2/assets/src/Electrostatic%20Field/Impact_003.ogg",
+          "delay": null,
+          "volume": null
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    }
+  },
+  "static": {
+    "0": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Cure Wounds",
+      "type": "targetDefault",
+      "staticOptions": "staticSpells",
+      "animation": "curewounds",
+      "opacity": null,
+      "persistent": false,
+      "variant": "01",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1.5,
+      "below": true,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "1": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Healing Word",
+      "type": "targetDefault",
+      "staticOptions": "staticSpells",
+      "animation": "generichealing",
+      "opacity": null,
+      "persistent": false,
+      "variant": "01",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1.5,
+      "below": true,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "2": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Toll the Dead",
+      "type": "target",
+      "staticOptions": "staticSpells",
+      "animation": "tollthedead",
+      "opacity": null,
+      "persistent": false,
+      "variant": "complete",
+      "color": "green",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "3": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Bite",
+      "type": "target",
+      "staticOptions": "creature",
+      "animation": "bite",
+      "opacity": null,
+      "persistent": false,
+      "variant": "01",
+      "color": "red",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "4": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Claw",
+      "type": "target",
+      "staticOptions": "creature",
+      "animation": "claw",
+      "opacity": null,
+      "persistent": false,
+      "variant": "01",
+      "color": "red",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "5": {
+      "hidden": false,
+      "anim2d": false,
+      "name": "Disguise Self",
+      "type": "source",
+      "staticOptions": "conditions",
+      "animation": "runes",
+      "opacity": null,
+      "persistent": true,
+      "variant": "01",
+      "color": "darkorange",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    }
+  },
+  "templates": {
+    "0": {
+      "hidden": true,
+      "name": "Call Lightning",
+      "type": "circle",
+      "animation": "calllightning",
+      "variant": "01",
+      "color": "blueorange",
+      "repeat": 1,
+      "delay": 500,
+      "scaleX": 1,
+      "scaleY": 1,
+      "below": false,
+      "custom": false,
+      "opacity": 0.75,
+      "removeTemplate": true,
+      "persist": true,
+      "persistType": "overheadtile",
+      "occlusionMode": "3",
+      "occlusionAlpha": 0.7,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "1": {
+      "hidden": true,
+      "name": "Fog Cloud",
+      "type": "circle",
+      "animation": "fogcloud",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scaleX": 1,
+      "scaleY": 1,
+      "below": false,
+      "custom": false,
+      "opacity": 0.75,
+      "removeTemplate": true,
+      "persist": true,
+      "persistType": "overheadtile",
+      "occlusionMode": "3",
+      "occlusionAlpha": 0.65,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "2": {
+      "hidden": true,
+      "name": "Thunderwave",
+      "type": "rect",
+      "animation": "thunderwave",
+      "variant": "left",
+      "color": "blue",
+      "repeat": 3,
+      "delay": 500,
+      "scaleX": 1,
+      "scaleY": 1,
+      "below": false,
+      "custom": false,
+      "opacity": 0.75,
+      "removeTemplate": true,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "3": {
+      "hidden": false,
+      "name": "Grenade",
+      "type": "circle",
+      "animation": "explosion",
+      "variant": "01",
+      "color": "orange",
+      "repeat": 1,
+      "delay": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "below": false,
+      "custom": false,
+      "opacity": 1,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-2/assets/src/Guns%20and%20Explosions/Explosion_Large_07.ogg",
+          "delay": null,
+          "volume": null
+        }
+      }
+    },
+    "4": {
+      "hidden": false,
+      "name": "Overheat",
+      "type": "cone",
+      "animation": "burninghands",
+      "variant": "01",
+      "color": "orange",
+      "repeat": 1,
+      "delay": 500,
+      "scaleX": 1,
+      "scaleY": 1,
+      "below": false,
+      "custom": false,
+      "opacity": 0.75,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    }
+  },
+  "auras": {
+    "0": {
+      "hidden": false,
+      "name": "Spirit Guardians",
+      "animation": "spiritguardians",
+      "variant": "01",
+      "color": "yellowblue",
+      "scale": 3.5,
+      "opacity": 0.75,
+      "ignoretargets": true,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    }
+  },
+  "preset": {
+    "0": {
+      "hidden": false,
+      "name": "Bardic Inspiration",
+      "animation": "bardicinspiration",
+      "scale": 1,
+      "below": false,
+      "animateSelf": true,
+      "selfAnimation": "music",
+      "selfColor": "blue",
+      "animateTarget": true,
+      "targetAnimation": "bardicinspiration",
+      "targetColor": "greenorange",
+      "marker": true,
+      "selfMarkerColor": "greenorange",
+      "targetMarkerColor": "greenorange",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "1": {
+      "hidden": false,
+      "name": "Bless",
+      "animation": "bless",
+      "scale": 1.5,
+      "below": true,
+      "color": "yellow",
+      "addCTA": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "2": {
+      "hidden": true,
+      "name": "Shield",
+      "animation": "shieldspell",
+      "scale": 1,
+      "below": false,
+      "variant": "01",
+      "color": "blue",
+      "endeffect": "outro_explode",
+      "addCTA": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "3": {
+      "hidden": true,
+      "name": "Misty Step",
+      "animation": "teleportation",
+      "measureType": "alternating",
+      "range": 30,
+      "below": false,
+      "subAnimation": "mistystep",
+      "variant": "01",
+      "color": "blue",
+      "scale": 1.5,
+      "custom": false,
+      "subAnimation02": "mistystep",
+      "variant02": "02",
+      "color02": "blue",
+      "delay": null,
+      "scale02": 1.5,
+      "custom02": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    }
+  }
+}
