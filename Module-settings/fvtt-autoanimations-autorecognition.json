@@ -1956,6 +1956,32 @@
           "enable": false
         }
       }
+    },
+    "5": {
+      "hidden": false,
+      "name": "Smoke Grenade",
+      "type": "circle",
+      "animation": "fogcloud",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "below": false,
+      "custom": false,
+      "opacity": 1,
+      "removeTemplate": false,
+      "persist": true,
+      "persistType": "attachtemplate",
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-4/assets/src/Variety%20Sound%20Effects/Steam_Blast_Tube_Or_Pipe_Distant.ogg",
+          "delay": null,
+          "volume": null
+        }
+      }
     }
   },
   "auras": {
