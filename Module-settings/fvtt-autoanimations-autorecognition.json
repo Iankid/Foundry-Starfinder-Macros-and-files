@@ -1,4 +1,4 @@
-/// These settings use the free JB2A animations and the Games Audio Bundles. Audio references currently reflect Forge's file structure.
+// These settings use the free JB2A animations and the Games Audio Bundles. Audio references currently reflect Forge's file structure.
 {
   "version": 3,
   "search": "",
