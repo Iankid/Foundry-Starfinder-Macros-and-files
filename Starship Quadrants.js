@@ -12,7 +12,7 @@ const specs = headings.map(h => {
     let borderColor = "#45afeb"
     if( h < 180 ) borderColor = "#f49045";
     return {t: "ray",
-      user: game.user._id,
+      user: game.user.id,
       x: token.x + token.w / 2,
       y: token.y + token.h / 2,
       direction: rotation+ h,
