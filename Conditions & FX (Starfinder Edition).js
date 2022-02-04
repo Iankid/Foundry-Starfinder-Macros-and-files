@@ -1,4 +1,5 @@
 (async ()=> {
+// OUTDATED MACRO
 // Open a dialog for quickly adding or removing conditions and FX on the controlled tokens.
 // REQUIRES Token Magic FX mod: https://foundryvtt.com/packages/tokenmagic/
 // This macro was based on code by @Erogroth#7134. This version by @Iankid with the help of @SecretFire
