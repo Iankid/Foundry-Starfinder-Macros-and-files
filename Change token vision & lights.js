@@ -98,13 +98,13 @@ let visionDialog = async function() {
                 update.light = {};
                 update.light.dim = 15;
                 update.light.bright = 13.5;
-                update.light.angle = 45;
+                update.light.angle = 90;
                 break;
             case "flashlight":
                 update.light = {};
                 update.light.dim = 20;
                 update.light.bright = 18.5;
-                update.light.angle = 45;
+                update.light.angle = 90;
                 break;
             case "lantern":
                 update.light = {};
@@ -116,7 +116,7 @@ let visionDialog = async function() {
                 update.light = {};
                 update.light.dim = 100;
                 update.light.bright = 100;
-                update.light.angle = 45;
+                update.light.angle = 90;
                 break;
             case "beacon":
                 update.light = {};
