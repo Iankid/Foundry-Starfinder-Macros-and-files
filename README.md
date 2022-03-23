@@ -1,5 +1,7 @@
 # Foundry-Starfinder-Macros
 
+THIS IS NOT A FOUNDRY MODULE. ALL MACRO CODES MUST BE COPIED AND PASTED INTO FOUNDRY MANUALLY~
+
 All Macros listed are for use in VTT Foundry, Starfinder system.
 
 Conditions & FX macro requires Token Magic FX mod: https://foundryvtt.com/packages/tokenmagic/
