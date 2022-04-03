@@ -7,8 +7,8 @@ let pcArray = [];
 let npcArray = [];
 let messageContentPC = "";
 let messageContentNPC = "";
-let messageHeaderPC = "<b>PC Passive & Rolled Perception</b><br>";
-let messageHeaderNPC = "<b>NPC Passive & Rolled Perception</b><br>";
+let messageHeaderPC = "<b>PC Take 10 & Rolled Perception</b><br>";
+let messageHeaderNPC = "<b>NPC Take 10 & Rolled Perception</b><br>";
 
 // Gather tokens in the current scene into an array.
 let tokens = canvas.tokens.placeables.filter((token) => token.data && token.actor);
