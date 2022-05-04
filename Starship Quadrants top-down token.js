@@ -1,6 +1,6 @@
 (async function(){
 if (!token) {
-  ui.notifications.info("Seleziona un'astronave per visualizzare gli archi di fuoco");
+  ui.notifications.info("Select a ship token on the active scene!");
   return
 }
 const rotation = (token.data.flags["about-face"] && (typeof token.data.flags["about-face"].direction) !== "undefined") ? token.data.flags["about-face"].direction : token.data.rotation;
