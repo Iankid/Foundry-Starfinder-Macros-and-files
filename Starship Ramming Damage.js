@@ -1,3 +1,5 @@
+//Calculates Ramming Damage as described on SOM pg. 17. By LebombJames
+
 const starship = canvas.tokens.controlled[0]?.actor;
 
 if (!starship || starship.type !== "starship") {
