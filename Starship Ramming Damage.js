@@ -10,7 +10,7 @@ if (!starship || starship.type !== "starship") {
 //Get speed from starship
 const speed = starship.items.find(i => i.type === "starshipThruster").data.data.speed;
 
-//Get speed from starship
+//Get size from starship
 const size = starship.items.find(i => i.type === "starshipFrame").data.data.size;
 
 //Get an array of starhsip sizes
