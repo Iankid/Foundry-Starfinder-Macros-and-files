@@ -23,7 +23,11 @@
       "custom": false,
       "audio": {
         "a01": {
-          "enable": false
+          "enable": true,
+          "file": "",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         },
         "a02": {
           "enable": false
@@ -62,7 +66,14 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "0"
+      "menuSection": "0",
+      "soundOnly": {
+        "enable": false
+      },
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "1": {
       "hidden": true,
@@ -1076,7 +1087,14 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "16"
+      "menuSection": "16",
+      "soundOnly": {
+        "enable": false
+      },
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "17": {
       "hidden": true,
@@ -1448,7 +1466,14 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "22"
+      "menuSection": "22",
+      "soundOnly": {
+        "enable": false
+      },
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "23": {
       "hidden": true,
@@ -1506,7 +1531,14 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "23"
+      "menuSection": "23",
+      "soundOnly": {
+        "enable": false
+      },
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "24": {
       "hidden": true,
@@ -1568,7 +1600,14 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "24"
+      "menuSection": "24",
+      "soundOnly": {
+        "enable": false
+      },
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     }
   },
   "range": {
@@ -2341,6 +2380,71 @@
       "menuSection": "12"
     },
     "13": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Energy Ray",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "scorchingray",
+      "variant": "02",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-3/src/Magic%20Spells%2C%20Buffs%20And%20Attacks/Magic%20And%20Spell%20Sounds/Electric_Surge_Blast_04.ogg",
+          "startTime": 100,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "customPath": "",
+      "onlyX": false,
+      "menuSection": "13"
+    },
+    "14": {
       "hidden": true,
       "anim2d": false,
       "name": "Fire Bolt",
@@ -2395,9 +2499,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "13"
+      "menuSection": "14"
     },
-    "14": {
+    "15": {
       "hidden": true,
       "anim2d": false,
       "name": "Gravity Surge",
@@ -2452,9 +2556,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "14"
+      "menuSection": "15"
     },
-    "15": {
+    "16": {
       "hidden": true,
       "anim2d": false,
       "name": "Guiding Bolt",
@@ -2509,9 +2613,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "15"
+      "menuSection": "16"
     },
-    "16": {
+    "17": {
       "hidden": true,
       "anim2d": false,
       "name": "Handcannon",
@@ -2576,9 +2680,9 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "16"
+      "menuSection": "17"
     },
-    "17": {
+    "18": {
       "hidden": true,
       "anim2d": false,
       "name": "Handcoil",
@@ -2643,9 +2747,9 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "17"
+      "menuSection": "18"
     },
-    "18": {
+    "19": {
       "hidden": true,
       "anim2d": false,
       "name": "Hurl Forcedisk",
@@ -2700,9 +2804,233 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "18"
+      "menuSection": "19"
     },
-    "19": {
+    "20": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Knife",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": "1"
+      },
+      "menuType": "weapon",
+      "animation": "dagger",
+      "variant": "01",
+      "color": "white",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "customPath": "modules/JB2A_DnD5e/Library/Generic/Weapon_Attacks/Ranged/Dagger01_01_Regular_White_15ft_1000x400.webm",
+      "onlyX": true,
+      "menuSection": "20"
+    },
+    "21": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Laser",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "lasershot",
+      "variant": "01",
+      "color": "red",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-2/src/Future%20Weapons/Future_Weapons_3_Assault_Rifle_Shot_Single_4.ogg",
+          "startTime": 200,
+          "volume": 0.5,
+          "delay": null
+        },
+        "e01": {
+          "enable": false,
+          "file": "",
+          "startTime": null,
+          "volume": 1,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "menuType": "",
+        "animation": "",
+        "variant": "",
+        "color": "",
+        "custom": false,
+        "radius": 5,
+        "delay": 300,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "21"
+    },
+    "22": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Laser pistol",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "lasershot",
+      "variant": "01",
+      "color": "red",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-2/src/Future%20Weapons/Future_Weapons_3_Assault_Rifle_Shot_Single_4.ogg",
+          "startTime": 200,
+          "volume": 0.5,
+          "delay": null
+        },
+        "e01": {
+          "enable": false,
+          "file": "",
+          "startTime": null,
+          "volume": 1,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "menuType": "",
+        "animation": "",
+        "variant": "",
+        "color": "",
+        "custom": false,
+        "radius": 5,
+        "delay": 300,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "22"
+    },
+    "23": {
       "hidden": true,
       "anim2d": false,
       "name": "Magic Missile",
@@ -2757,9 +3085,166 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "19"
+      "menuSection": "23"
     },
-    "20": {
+    "24": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Maser",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "guidingbolt",
+      "variant": "01",
+      "color": "blueyellow",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-1/src/Analog%20Synth%20Volume%201%20Bleeps%20Sweeps%20And%20Creeps/Laser_Like_Synth_Basic_Laser4_08.ogg",
+          "startTime": null,
+          "volume": 0.5,
+          "delay": null
+        },
+        "e01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-1/assets/src/8%20Bit%20Games/Sw001_8-Bit-Games-017_Explosion.ogg",
+          "startTime": null,
+          "volume": 1,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": true,
+        "menuType": "shieldfx",
+        "animation": "energyfield",
+        "variant": "01",
+        "color": "blue",
+        "custom": false,
+        "radius": 2,
+        "delay": 1497,
+        "below": false,
+        "customPath": ""
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "24"
+    },
+    "25": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Negative-Energy",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "disintegrate",
+      "variant": "01",
+      "color": "green",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/62a89b891c228717824f05b2/tng_phaser6_clean.mp3",
+          "startTime": null,
+          "volume": 0.5,
+          "delay": null
+        },
+        "e01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/62a89b891c228717824f05b2/force_field_hit.mp3",
+          "startTime": null,
+          "volume": 1,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": true,
+        "menuType": "shieldfx",
+        "animation": "energyfield",
+        "variant": "01",
+        "color": "blue",
+        "custom": false,
+        "radius": 2,
+        "delay": 200,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "25"
+    },
+    "26": {
       "hidden": true,
       "anim2d": false,
       "name": "Pistol",
@@ -2824,9 +3309,165 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "20"
+      "menuSection": "26"
     },
-    "21": {
+    "27": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Plasma",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "guidingbolt",
+      "variant": "01",
+      "color": "blueyellow",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-1/src/Analog%20Synth%20Volume%201%20Bleeps%20Sweeps%20And%20Creeps/Laser_Like_Synth_Basic_Laser4_08.ogg",
+          "startTime": null,
+          "volume": 0.5,
+          "delay": null
+        },
+        "e01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-1/assets/src/8%20Bit%20Games/Sw001_8-Bit-Games-017_Explosion.ogg",
+          "startTime": null,
+          "volume": 1,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": true,
+        "menuType": "shieldfx",
+        "animation": "energyfield",
+        "variant": "01",
+        "color": "blue",
+        "custom": false,
+        "radius": 2,
+        "delay": 3600,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "27"
+    },
+    "28": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Quantum",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "firebolt",
+      "variant": "01",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/62a89b891c228717824f05b2/tng_torpedo3_clean.mp3",
+          "startTime": null,
+          "volume": 0.5,
+          "delay": null
+        },
+        "e01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/62a89b891c228717824f05b2/force_field_hit.mp3",
+          "startTime": null,
+          "volume": 1,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": true,
+        "menuType": "shieldfx",
+        "animation": "energyfield",
+        "variant": "01",
+        "color": "blue",
+        "custom": false,
+        "radius": 2,
+        "delay": 500,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "28"
+    },
+    "29": {
       "hidden": true,
       "anim2d": false,
       "name": "Ray of Frost",
@@ -2881,9 +3522,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "21"
+      "menuSection": "29"
     },
-    "22": {
+    "30": {
       "hidden": true,
       "anim2d": false,
       "name": "Rifle",
@@ -2948,9 +3589,9 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "22"
+      "menuSection": "30"
     },
-    "23": {
+    "31": {
       "hidden": true,
       "anim2d": false,
       "name": "Scattergun",
@@ -3005,9 +3646,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "23"
+      "menuSection": "31"
     },
-    "24": {
+    "32": {
       "hidden": true,
       "anim2d": false,
       "name": "Scorching Ray",
@@ -3062,9 +3703,166 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "24"
+      "menuSection": "32"
     },
-    "25": {
+    "33": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Torpedo",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "firebolt",
+      "variant": "01",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-1/src/Analog%20Synth%20Volume%201%20Bleeps%20Sweeps%20And%20Creeps/Laser_Like_Synth_Basic_Laser4_08.ogg",
+          "startTime": null,
+          "volume": 0.5,
+          "delay": null
+        },
+        "e01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/62a89b891c228717824f05b2/force_field_hit.mp3",
+          "startTime": null,
+          "volume": 1,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": true,
+        "menuType": "shieldfx",
+        "animation": "energyfield",
+        "variant": "01",
+        "color": "blue",
+        "custom": false,
+        "radius": 2,
+        "delay": 300,
+        "below": false,
+        "customPath": ""
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "33"
+    },
+    "34": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Twin laser",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "lasershot",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": 2,
+      "delay": 250,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-1/src/Analog%20Synth%20Volume%201%20Bleeps%20Sweeps%20And%20Creeps/Laser_Like_Synth_Basic_Laser4_08.ogg",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        },
+        "e01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/62a89b891c228717824f05b2/force_field_hit.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": true,
+        "menuType": "shieldfx",
+        "animation": "energyfield",
+        "variant": "01",
+        "color": "blue",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "34"
+    },
+    "35": {
       "hidden": true,
       "anim2d": false,
       "name": "Witch Bolt",
@@ -3119,7 +3917,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "25"
+      "menuSection": "35"
     }
   },
   "static": {
@@ -3263,7 +4061,11 @@
       "custom": false,
       "audio": {
         "a01": {
-          "enable": false
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-3/assets/src/Monsters/Monster_Bite_3.ogg",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "levels3d": {
@@ -3298,7 +4100,15 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "creature",
-      "menuSection": "2"
+      "menuSection": "2",
+      "soundOnly": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "3": {
       "hidden": true,
@@ -3485,6 +4295,41 @@
     },
     "6": {
       "hidden": true,
+      "name": "Cure Wounds",
+      "animation": "curewounds",
+      "staticOptions": "staticSpells",
+      "variant": "01",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1.5,
+      "below": true,
+      "type": "targetDefault",
+      "menuType": "spell",
+      "menuSection": "6",
+      "anim2d": false,
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "custom": false,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      }
+    },
+    "7": {
+      "hidden": true,
       "anim2d": false,
       "name": "Daze",
       "macro": {
@@ -3542,9 +4387,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "6"
+      "menuSection": "7"
     },
-    "7": {
+    "8": {
       "hidden": true,
       "anim2d": false,
       "name": "Debris Field",
@@ -3603,9 +4448,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "shieldfx",
-      "menuSection": "7"
+      "menuSection": "8"
     },
-    "8": {
+    "9": {
       "hidden": true,
       "anim2d": false,
       "name": "Detect Magic",
@@ -3661,9 +4506,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "8"
+      "menuSection": "9"
     },
-    "9": {
+    "10": {
       "hidden": true,
       "anim2d": false,
       "name": "Disguise Self",
@@ -3722,9 +4567,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "conditions",
-      "menuSection": "9"
+      "menuSection": "10"
     },
-    "10": {
+    "11": {
       "hidden": true,
       "anim2d": false,
       "name": "Fear",
@@ -3783,9 +4628,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "conditions",
-      "menuSection": "10"
+      "menuSection": "11"
     },
-    "11": {
+    "12": {
       "hidden": true,
       "anim2d": false,
       "name": "Frightful Display",
@@ -3844,9 +4689,43 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "conditions",
-      "menuSection": "11"
+      "menuSection": "12"
     },
-    "12": {
+    "13": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Get 'Em (Ex)",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "tokenborder",
+      "animation": "spinning",
+      "variant": "01",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "13"
+    },
+    "14": {
       "hidden": true,
       "anim2d": false,
       "name": "Haste",
@@ -3905,9 +4784,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "tokenborder",
-      "menuSection": "12"
+      "menuSection": "14"
     },
-    "13": {
+    "15": {
       "hidden": true,
       "anim2d": false,
       "name": "Healing Touch",
@@ -3966,9 +4845,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "13"
+      "menuSection": "15"
     },
-    "14": {
+    "16": {
       "hidden": true,
       "anim2d": false,
       "name": "Healing Word",
@@ -4027,9 +4906,47 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "14"
+      "menuSection": "16"
     },
-    "15": {
+    "17": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Incompetence",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "generic",
+      "animation": "impact",
+      "variant": "01",
+      "color": "darkred",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": 1.2,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-3/src/Magic%20Spells%2C%20Buffs%20And%20Attacks/Dark_Spell_Life_Tap_03.ogg",
+          "startTime": null,
+          "volume": 0.2,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "17"
+    },
+    "18": {
       "hidden": true,
       "anim2d": false,
       "name": "Inflict Pain",
@@ -4088,9 +5005,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "conditions",
-      "menuSection": "15"
+      "menuSection": "18"
     },
-    "16": {
+    "19": {
       "hidden": true,
       "anim2d": false,
       "name": "Mental Anguish",
@@ -4149,9 +5066,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "conditions",
-      "menuSection": "16"
+      "menuSection": "19"
     },
-    "17": {
+    "20": {
       "hidden": true,
       "anim2d": false,
       "name": "Mind Thrust",
@@ -4207,9 +5124,17 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "17"
+      "menuSection": "20",
+      "soundOnly": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
     },
-    "18": {
+    "21": {
       "hidden": true,
       "anim2d": false,
       "name": "Mystic Cure",
@@ -4268,9 +5193,17 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "18"
+      "menuSection": "21",
+      "soundOnly": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
     },
-    "19": {
+    "22": {
       "hidden": true,
       "anim2d": false,
       "name": "Psychokinetic Strangulation",
@@ -4329,9 +5262,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "19"
+      "menuSection": "22"
     },
-    "20": {
+    "23": {
       "hidden": true,
       "anim2d": false,
       "name": "Share pain",
@@ -4390,9 +5323,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "shieldfx",
-      "menuSection": "20"
+      "menuSection": "23"
     },
-    "21": {
+    "24": {
       "hidden": true,
       "anim2d": false,
       "name": "Solar Acceleration",
@@ -4451,9 +5384,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "tokenborder",
-      "menuSection": "21"
+      "menuSection": "24"
     },
-    "22": {
+    "25": {
       "hidden": true,
       "anim2d": false,
       "name": "Sow Doubt",
@@ -4512,9 +5445,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "conditions",
-      "menuSection": "22"
+      "menuSection": "25"
     },
-    "23": {
+    "26": {
       "hidden": true,
       "anim2d": false,
       "name": "Spark Of Ingenuity",
@@ -4570,9 +5503,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "23"
+      "menuSection": "26"
     },
-    "24": {
+    "27": {
       "hidden": true,
       "anim2d": false,
       "name": "Spellguard",
@@ -4631,9 +5564,9 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "marker",
-      "menuSection": "24"
+      "menuSection": "27"
     },
-    "25": {
+    "28": {
       "hidden": true,
       "anim2d": false,
       "name": "Toll the Dead",
@@ -4692,9 +5625,43 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "25"
+      "menuSection": "28"
     },
-    "26": {
+    "29": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Trick Attack (waiting on patch)",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "conditions",
+      "animation": "poison",
+      "variant": "01",
+      "color": "darkgreen",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "29"
+    },
+    "30": {
       "hidden": true,
       "anim2d": false,
       "name": "Wisp Ally",
@@ -4750,11 +5717,52 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "26"
+      "menuSection": "30",
+      "soundOnly": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
     }
   },
   "templates": {
     "0": {
+      "below": false,
+      "hidden": true,
+      "name": "Arcing Surge",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "ray",
+      "animation": "lightningbolt",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-3/assets/src/Rain%20And%20Thunder/Thunder_Mountainous_Big_Crack_02.ogg",
+          "startTime": null,
+          "volume": null,
+          "delay": 600
+        }
+      },
+      "menuSection": "0"
+    },
+    "1": {
       "hidden": true,
       "name": "Breath-Stealer Mask",
       "macro": {
@@ -4782,9 +5790,9 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "0"
+      "menuSection": "1"
     },
-    "1": {
+    "2": {
       "hidden": true,
       "name": "Call Lightning",
       "macro": {
@@ -4815,9 +5823,9 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "1"
+      "menuSection": "2"
     },
-    "2": {
+    "3": {
       "hidden": true,
       "name": "Confusion",
       "macro": {
@@ -4845,9 +5853,9 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "2"
+      "menuSection": "3"
     },
-    "3": {
+    "4": {
       "hidden": true,
       "name": "Cosmic Eddy",
       "macro": {
@@ -4874,9 +5882,9 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "3"
+      "menuSection": "4"
     },
-    "4": {
+    "5": {
       "hidden": true,
       "name": "Fog Cloud",
       "macro": {
@@ -4907,9 +5915,9 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "4"
+      "menuSection": "5"
     },
-    "5": {
+    "6": {
       "hidden": true,
       "name": "Grenade",
       "macro": {
@@ -4945,9 +5953,42 @@
         "enable": false
       },
       "persistType": "",
-      "menuSection": "5"
+      "menuSection": "6"
     },
-    "6": {
+    "7": {
+      "below": false,
+      "hidden": true,
+      "name": "Incendiary Grenade",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "circle",
+      "animation": "explosion",
+      "variant": "01",
+      "color": "yellowblue",
+      "custom": false,
+      "repeat": 1,
+      "delay": 500,
+      "scaleX": 2,
+      "scaleY": 2,
+      "opacity": 1,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/gAudioBundle-1/src/8%20Bit%20Games/Sw001_8-Bit-Games-017_Explosion.ogg",
+          "startTime": null,
+          "volume": 1,
+          "delay": null
+        }
+      },
+      "menuSection": "7"
+    },
+    "8": {
       "hidden": true,
       "name": "Miasma",
       "macro": {
@@ -4976,9 +6017,9 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "6"
+      "menuSection": "8"
     },
-    "7": {
+    "9": {
       "hidden": true,
       "name": "Overheat",
       "macro": {
@@ -4994,10 +6035,10 @@
       "repeat": 1,
       "delay": 500,
       "scaleX": 1,
-      "scaleY": 1,
+      "scaleY": null,
       "below": false,
       "custom": false,
-      "opacity": 0.75,
+      "opacity": null,
       "removeTemplate": false,
       "persist": false,
       "audio": {
@@ -5006,9 +6047,12 @@
         }
       },
       "menuType": "cone",
-      "menuSection": "7"
+      "menuSection": "9",
+      "soundOnly": {
+        "enable": false
+      }
     },
-    "8": {
+    "10": {
       "hidden": true,
       "name": "Polar Vortex",
       "macro": {
@@ -5037,9 +6081,43 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "8"
+      "menuSection": "10"
     },
-    "9": {
+    "11": {
+      "below": false,
+      "hidden": true,
+      "name": "Psychokinetic Hand",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "square",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "repeat": 1,
+      "delay": 500,
+      "scaleX": 4,
+      "scaleY": 4,
+      "opacity": 1,
+      "removeTemplate": true,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "https://assets.forge-vtt.com/bazaar/modules/gAudioBundle-1/assets/src/Artificial%20Life/Articulations-Reverses-Energy_01.ogg",
+          "startTime": null,
+          "volume": 0.5,
+          "delay": 100
+        }
+      },
+      "customPath": "https://assets.forge-vtt.com/bazaar/modules/JB2A_DnD5e/assets/Library/5th_Level/Arcane_Hand/ArcaneHand_Human_01_Idle_Purple_400x400.webm",
+      "menuSection": "11"
+    },
+    "12": {
       "hidden": true,
       "name": "Slow",
       "macro": {
@@ -5067,9 +6145,9 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "9"
+      "menuSection": "12"
     },
-    "10": {
+    "13": {
       "hidden": true,
       "name": "Smoke Grenade",
       "macro": {
@@ -5105,9 +6183,9 @@
       "soundOnly": {
         "enable": false
       },
-      "menuSection": "10"
+      "menuSection": "13"
     },
-    "11": {
+    "14": {
       "hidden": true,
       "name": "Supernova",
       "macro": {
@@ -5135,9 +6213,9 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "11"
+      "menuSection": "14"
     },
-    "12": {
+    "15": {
       "hidden": true,
       "name": "Thunderwave",
       "macro": {
@@ -5165,7 +6243,7 @@
         }
       },
       "menuType": "square",
-      "menuSection": "12"
+      "menuSection": "15"
     }
   },
   "auras": {
@@ -5350,5 +6428,6 @@
       },
       "menuSection": "4"
     }
-  }
+  },
+  "aefx": {}
 }
