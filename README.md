@@ -12,4 +12,5 @@ The import settings for Automated Animations use the Patreon JB2A animations htt
 Starfinder Mods
 
 https://gitlab.com/mkahvi/fvtt-micro-modules/-/tree/master/sf-spellbook-details
+
 https://github.com/DocQuantic/spell-template
