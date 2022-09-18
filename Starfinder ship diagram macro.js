@@ -1,6 +1,10 @@
 // Created by @mao
 // Values auto-update when you change the ship Actor's hull points or shields.
-// Create the labels and get their ids, as well as change the ship name
+// 1. Create the five text labels for each of your values.
+// 2. Press F12 to open the browser dev tools and go into the console.
+// 3. Select one of the labels and enter canvas.drawings.controlled[0].data._id to get the id. Do this for all five labels.
+// 4. Update the script with the new ids and the name of the actor you want the labels to represent.
+// 5. Paste the script into a new script macro and execute it as the GM.
 // Ship diagram inspired by /u/Low_on_Mana's Starfinder combat tool
 
 Hooks.on("updateActor", async (actor, data) => {
