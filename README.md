@@ -14,3 +14,5 @@ Starfinder Mods
 https://gitlab.com/mkahvi/fvtt-micro-modules/-/tree/master/sf-spellbook-details
 
 https://github.com/DocQuantic/spell-template
+
+https://gitlab.com/mkahvi/fvtt-micro-modules/-/tree/master/pf1-floating-health
