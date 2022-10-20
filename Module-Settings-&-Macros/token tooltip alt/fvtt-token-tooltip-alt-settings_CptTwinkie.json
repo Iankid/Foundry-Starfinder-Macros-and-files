@@ -360,7 +360,7 @@
       "static": {
         "displayNameInTooltip": true,
         "useAccentEverywhere": false,
-        "accentColor": "#3f8e25",
+        "accentColor": "#43dfdf",
         "tokenDispositions": [
           "FRIENDLY",
           "NEUTRAL",
@@ -1314,7 +1314,7 @@
       "static": {
         "displayNameInTooltip": true,
         "useAccentEverywhere": false,
-        "accentColor": "#25588d",
+        "accentColor": "#e72124",
         "tokenDispositions": [
           "FRIENDLY",
           "NEUTRAL",
@@ -1656,7 +1656,7 @@
       "static": {
         "displayNameInTooltip": true,
         "useAccentEverywhere": false,
-        "accentColor": "#24598f",
+        "accentColor": "#e72124",
         "tokenDispositions": [
           "FRIENDLY",
           "NEUTRAL",
