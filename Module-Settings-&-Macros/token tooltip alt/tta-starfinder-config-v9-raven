@@ -1,0 +1,2269 @@
+{
+  "gmSettings": {
+    "default": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#2a65b6",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "character": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#2a65b6",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "drone": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#646464",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "npc": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#2a65b6",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "npc2": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#2a65b6",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "hazard": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": []
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "accentColor": "#cfcef3",
+        "useAccentColorForEverything": false,
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ]
+      }
+    },
+    "starship": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+              "icon": "fa-fire-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-rocket",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.maneuverability",
+              "icon": "fa-directions",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+              "icon": "fa-layer-group",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+              "icon": "fa-fire-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-rocket",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.maneuverability",
+              "icon": "fa-directions",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+              "icon": "fa-layer-group",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+              "icon": "fa-fire-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-rocket",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.maneuverability",
+              "icon": "fa-directions",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+              "icon": "fa-layer-group",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#351a51",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "vehicle": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; hp=<attributes.hp.value>; hpm=<attributes.hp.max>;hp <= 0 ? \"Wrecked\" : hp <= th & hpm > 1 ? \"Broken\" : \"Functional\" }",
+              "icon": "fa-gears",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#f1c232"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.cover",
+              "icon": "fa-user-shield",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; hp=<attributes.hp.value>; hpm=<attributes.hp.max>;hp <= 0 ? \"Wrecked\" : hp <= th & hpm > 1 ? \"Broken\" : \"Functional\" }",
+              "icon": "fa-gears",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#f1c232"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.cover",
+              "icon": "fa-user-shield",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; hp=<attributes.hp.value>; hpm=<attributes.hp.max>;hp <= 0 ? \"Wrecked\" : hp <= th & hpm > 1 ? \"Broken\" : \"Functional\" }",
+              "icon": "fa-gears",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#f1c232"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.cover",
+              "icon": "fa-user-shield",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#351a51",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    }
+  },
+  "playerSettings": {
+    "default": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; sp <= 0 ? \"❌\" : sp == 1 & spm > 1 ? \"♡♡♡♡\" : sp == 69 ? \"Nice\" : sp < spm*0.25 ? \"❤♡♡♡\" : sp < spm*0.5 ? \"❤❤♡♡\" : sp < spm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; sp <= 0 ? \"❌\" : sp == 1 & spm > 1 ? \"♡♡♡♡\" : sp == 69 ? \"Nice\" : sp < spm*0.25 ? \"❤♡♡♡\" : sp < spm*0.5 ? \"❤❤♡♡\" : sp < spm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; sp <= 0 ? \"❌\" : sp == 1 & spm > 1 ? \"♡♡♡♡\" : sp == 69 ? \"Nice\" : sp < spm*0.25 ? \"❤♡♡♡\" : sp < spm*0.5 ? \"❤❤♡♡\" : sp < spm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#2a65b6",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "character": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; sp <= 0 ? \"❌\" : sp == 1 & spm > 1 ? \"♡♡♡♡\" : sp == 69 ? \"Nice\" : sp < spm*0.25 ? \"❤♡♡♡\" : sp < spm*0.5 ? \"❤❤♡♡\" : sp < spm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; sp <= 0 ? \"❌\" : sp == 1 & spm > 1 ? \"♡♡♡♡\" : sp == 69 ? \"Nice\" : sp < spm*0.25 ? \"❤♡♡♡\" : sp < spm*0.5 ? \"❤❤♡♡\" : sp < spm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; sp <= 0 ? \"❌\" : sp == 1 & spm > 1 ? \"♡♡♡♡\" : sp == 69 ? \"Nice\" : sp < spm*0.25 ? \"❤♡♡♡\" : sp < spm*0.5 ? \"❤❤♡♡\" : sp < spm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "HOSTILE",
+        "useAccentEverywhere": false,
+        "accentColor": "#2a65b6",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "drone": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "HOSTILE",
+        "useAccentEverywhere": false,
+        "accentColor": "#646464",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "npc": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "HOSTILE",
+        "useAccentEverywhere": false,
+        "accentColor": "#2a65b6",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "npc2": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Health\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC. \", string(kac + 8), \" KAC + 8\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ speed=<attributes.speed.land.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "HOSTILE",
+        "useAccentEverywhere": false,
+        "accentColor": "#2a65b6",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "hazard": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": []
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": []
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "accentColor": "#159833",
+        "useAccentColorForEverything": false,
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ]
+      }
+    },
+    "starship": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+              "icon": "fa-fire-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-rocket",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.maneuverability",
+              "icon": "fa-directions",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+              "icon": "fa-layer-group",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \" S, \", string(ac), \" AC, \", string(tl), \" TL\") }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; qmax=<attributes.shields.limit>; shield <= 0 ? \"❌\" : shield == 1 & qmax > 1 ? \"♡♡♡♡\" : shield == 69 ? \"Nice\" : shield < qmax*0.25 ? \"❤♡♡♡\" : shield < qmax*0.5 ? \"❤❤♡♡\" : shield < qmax*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "HOSTILE",
+        "useAccentEverywhere": false,
+        "accentColor": "#351a51",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "vehicle": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; hp=<attributes.hp.value>; hpm=<attributes.hp.max>;hp <= 0 ? \"Wrecked\" : hp <= th & hpm > 1 ? \"Broken\" : \"Functional\" }",
+              "icon": "fa-gears",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#f1c232"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.cover",
+              "icon": "fa-user-shield",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; hp=<attributes.hp.value>; hpm=<attributes.hp.max>;hp <= 0 ? \"Wrecked\" : hp <= th & hpm > 1 ? \"Broken\" : \"Functional\" }",
+              "icon": "fa-gears",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#f1c232"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; hp=<attributes.hp.value>; hpm=<attributes.hp.max>;hp <= 0 ? \"Wrecked\" : hp <= th & hpm > 1 ? \"Broken\" : \"Functional\" }",
+              "icon": "fa-gears",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#f1c232"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; hp <= 0 ? \"❌\" : hp == 1 & hpm > 1 ? \"♡♡♡♡\" : hp == 69 ? \"Nice\" : hp < hpm*0.25 ? \"❤♡♡♡\" : hp < hpm*0.5 ? \"❤❤♡♡\" : hp < hpm*0.75 ? \"❤❤❤♡\" : \"❤❤❤❤\" }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d31d1d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; hp=<attributes.hp.value>; hpm=<attributes.hp.max>;hp <= 0 ? \"Wrecked\" : hp <= th & hpm > 1 ? \"Broken\" : \"Functional\" }",
+              "icon": "fa-gears",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#f1c232"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "HOSTILE",
+        "useAccentEverywhere": false,
+        "accentColor": "#000000",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    }
+  }
+}
