@@ -1,0 +1,3157 @@
+{
+  "gmSettings": {
+    "default": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": []
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#808080",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "character": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#43dfdf",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "drone": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ }",
+              "icon": "",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#1cebd2"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{\n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ }",
+              "icon": "",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#1cebd2"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{\n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ }",
+              "icon": "",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#1cebd2"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{\n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#595959",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "hazard": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \" / \", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ atk=<attributes.baseAttackBonus.value>; concat(string(atk), \" Atk\") }",
+              "icon": "fa-fist-raised",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ dmg=<attributes.damage.value>; concat(string(dmg), \" Dmg\") }",
+              "icon": "fa-user-injured",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ff8000"
+            },
+            {
+              "value": "{ cr=<details.cr.value>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ hard=<attributes.hardness.value>; concat(string(hard), \" Hard\") }",
+              "icon": "fa-hand-rock",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ fort=<attributes.fort.value>; concat(string(fort), \" Fort\") }",
+              "icon": "fa-weight-hanging",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ref=<attributes.reflex.value>; concat(string(ref), \" Ref\") }",
+              "icon": "fa-user-ninja",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ will=<attributes.will.value>; concat(string(will), \" Will\") }",
+              "icon": "fa-brain",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "details.source",
+              "icon": "",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "dcs.notice.value",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.trigger.value",
+              "icon": "fa-toggle-on",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.effect.value",
+              "icon": "fa-sort-amount-down",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \" / \", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ atk=<attributes.baseAttackBonus.value>; concat(string(atk), \" Atk\") }",
+              "icon": "fa-fist-raised",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ dmg=<attributes.damage.value>; concat(string(dmg), \" Dmg\") }",
+              "icon": "fa-user-injured",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ff8000"
+            },
+            {
+              "value": "{ cr=<details.cr.value>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ hard=<attributes.hardness.value>; concat(string(hard), \" Hard\") }",
+              "icon": "fa-hand-rock",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ fort=<attributes.fort.value>; concat(string(fort), \" Fort\") }",
+              "icon": "fa-weight-hanging",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ref=<attributes.reflex.value>; concat(string(ref), \" Ref\") }",
+              "icon": "fa-user-ninja",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ will=<attributes.will.value>; concat(string(will), \" Will\") }",
+              "icon": "fa-brain",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "details.source",
+              "icon": "",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "dcs.notice.value",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.trigger.value",
+              "icon": "fa-toggle-on",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.effect.value",
+              "icon": "fa-sort-amount-down",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \" / \", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ atk=<attributes.baseAttackBonus.value>; concat(string(atk), \" Atk\") }",
+              "icon": "fa-fist-raised",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ dmg=<attributes.damage.value>; concat(string(dmg), \" Dmg\") }",
+              "icon": "fa-user-injured",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#ff8000"
+            },
+            {
+              "value": "{ cr=<details.cr.value>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ hard=<attributes.hardness.value>; concat(string(hard), \" Hard\") }",
+              "icon": "fa-hand-rock",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ fort=<attributes.fort.value>; concat(string(fort), \" Fort\") }",
+              "icon": "fa-weight-hanging",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ref=<attributes.reflex.value>; concat(string(ref), \" Ref\") }",
+              "icon": "fa-user-ninja",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ will=<attributes.will.value>; concat(string(will), \" Will\") }",
+              "icon": "fa-brain",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "details.source",
+              "icon": "",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "dcs.notice.value",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.trigger.value",
+              "icon": "fa-toggle-on",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.effect.value",
+              "icon": "fa-sort-amount-down",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#8e2525",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "npc": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ cr=<details.cr>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "details.aura",
+              "icon": "fa-cloud",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#632b73"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ cr=<details.cr>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "details.aura",
+              "icon": "fa-cloud",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#632b73"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ cr=<details.cr>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "details.aura",
+              "icon": "fa-cloud",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#632b73"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#e72124",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "npc2": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ cr=<details.cr>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "details.aura",
+              "icon": "fa-cloud",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#632b73"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ cr=<details.cr>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "details.aura",
+              "icon": "fa-cloud",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#632b73"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ cr=<details.cr>; concat(string(cr), \" CR\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#2593f4"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "details.aura",
+              "icon": "fa-cloud",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#632b73"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#e72124",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "starship": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+              "icon": "fa-fire-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-rocket",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.maneuverability",
+              "icon": "fa-directions",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+              "icon": "fa-layer-group",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+              "icon": "fa-fire-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-rocket",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.maneuverability",
+              "icon": "fa-directions",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+              "icon": "fa-layer-group",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+              "icon": "fa-fire-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-rocket",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.maneuverability",
+              "icon": "fa-directions",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+              "icon": "fa-layer-group",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#59258e",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "vehicle": {
+      "items": [
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.cover",
+              "icon": "fa-user-shield",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.cover",
+              "icon": "fa-user-shield",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.cover",
+              "icon": "fa-user-shield",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": true,
+        "useAccentEverywhere": false,
+        "accentColor": "#8e6b25",
+        "tokenDispositions": [
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    }
+  },
+  "playerSettings": {
+    "default": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": []
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": []
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#925001",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "character": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ sp=<attributes.sp.value>; spm=<attributes.sp.max>; concat(string(sp), \"/\", string(spm), \" Stamina\") }",
+              "icon": "fa-bolt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ rp=<attributes.rp.value>; rpm=<attributes.rp.max>; concat(string(rp), \"/\", string(rpm), \" Resolve\") }",
+              "icon": "fa-user-plus",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#eaed07"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#3f8e25",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "drone": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ }",
+              "icon": "",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#1cebd2"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{\n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ }",
+              "icon": "",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#1cebd2"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{\n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#595959",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "hazard": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": []
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": []
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#8e2525",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "npc": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "details.aura",
+              "icon": "fa-cloud",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#632b73"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": []
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#25598e",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "npc2": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "{ per=<skills.per.mod>; concat(string(per), \" Perception\") }",
+              "icon": "fa-eye",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \nland = <attributes.speed.land.value>; \nburrow = <attributes.speed.burrowing.value>; \nclimb = <attributes.speed.climbing.value>; \nfly = <attributes.speed.flying.value>; \nman = <attributes.speed.flying.baseManeuverability>;\nman = man > 0 ? \"Per.\" : man == 0 ? \"Ave.\" : \"Clm.\";\nman = concat(\" \", string(man), \" \"); \nflycat = concat(string(fly), \" Fly\", fly == 0 ? \" \" : string(man));\nswim = <attributes.speed.swimming.value>;\n\nresult = \"\";\nresult = concat(string(result), land > 0 ? concat(string(land), \" Land \") : \"\");\nresult = concat(string(result), burrow > 0 ? concat(string(burrow), \" Burrow \") : \"\");\nresult = concat(string(result), climb > 0 ? concat(string(climb), \" Climb \") : \"\");\nresult = concat(string(result), swim > 0 ? concat(string(swim), \" Swim \") : \"\");\nresult = concat(string(result), fly > 0 ? concat(string(flycat)) : \"\");\n\nresult\n}",
+              "icon": "fa-running",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.special",
+              "icon": "fa-dove",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "details.aura",
+              "icon": "fa-cloud",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#632b73"
+            },
+            {
+              "value": "{ sa=<resources.solarian.stellarMode.value>; \nsa > 0 ? concat(\"Photon \", string(abs(sa))) : sa < 0 ? concat(\"Graviton \", string(abs(sa))) : \"Unattuned\" }",
+              "icon": "fa-sun",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5191df"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" S\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 2;\n\teac=<attributes.eac.value> + 2;\n\tref=<attributes.reflex.bonus> + 1;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") P\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 4;\n\teac=<attributes.eac.value> + 4;\n\tref=<attributes.reflex.bonus> + 2;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") R\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ \n\tkac=<attributes.kac.value> + 8;\n\teac=<attributes.eac.value> + 8;\n\tref=<attributes.reflex.bonus> + 4;\n\tconcat(string(kac), \"/\", string(eac), \" (+\", string(ref), \") I\")\n}",
+              "icon": "fa-umbrella",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": []
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#25598e",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "starship": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+              "icon": "fa-heart",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+              "icon": "fa-fire-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+              "icon": "fa-rocket",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.maneuverability",
+              "icon": "fa-directions",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{concat(\" \")}",
+              "icon": "",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-up",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-left",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-right",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+              "icon": "fa-angle-double-down",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": []
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": []
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#59258e",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    },
+    "vehicle": {
+      "items": [
+        {
+          "disposition": "OWNED",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.cover",
+              "icon": "fa-user-shield",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        },
+        {
+          "disposition": "FRIENDLY",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            }
+          ]
+        },
+        {
+          "disposition": "NEUTRAL",
+          "items": []
+        },
+        {
+          "disposition": "HOSTILE",
+          "items": [
+            {
+              "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" HP\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#5dc33d"
+            },
+            {
+              "value": "{ th=<attributes.hp.threshold>; h=<attributes.hardness>; concat(string(h), \" Hard \", string(th), \" THD\") }",
+              "icon": "fa-heartbeat",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#678abf"
+            },
+            {
+              "value": "{ kac=<attributes.kac.value>; concat(string(kac), \" KAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#d1333b"
+            },
+            {
+              "value": "{ eac=<attributes.eac.value>; concat(string(eac), \" EAC\") }",
+              "icon": "fa-shield-alt",
+              "isFunction": false,
+              "expression": true,
+              "isNumber": false,
+              "color": "#4a43cb"
+            },
+            {
+              "value": "attributes.speed.drive",
+              "icon": "fa-step-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.full",
+              "icon": "fa-fast-forward",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            },
+            {
+              "value": "attributes.speed.mph",
+              "icon": "fa-shipping-fast",
+              "isFunction": false,
+              "expression": false,
+              "isNumber": false,
+              "color": "#808080"
+            }
+          ]
+        }
+      ],
+      "static": {
+        "displayNameInTooltip": "FRIENDLY",
+        "useAccentEverywhere": false,
+        "accentColor": "#8e6b25",
+        "tokenDispositions": [
+          "OWNED",
+          "FRIENDLY",
+          "NEUTRAL",
+          "HOSTILE"
+        ],
+        "useAccentColorForEverything": false
+      }
+    }
+  }
+}
