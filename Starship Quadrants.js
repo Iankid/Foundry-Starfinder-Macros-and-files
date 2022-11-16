@@ -27,7 +27,7 @@
             y: origin.y,
             direction: tokenRotation + angle,
             distance: 100,
-            width: 0.001,
+            width: 1,
             borderColor,
             fillColor: "#000000"
         };

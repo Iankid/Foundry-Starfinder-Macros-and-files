@@ -17,7 +17,7 @@ const specs = headings.map(h => {
       y: token.y + token.h / 2,
       direction: rotation+ h,
       distance: 20,
-      width: 0.001,
+      width: 1,
       borderColor,
       fillColor: "#000000"
     }

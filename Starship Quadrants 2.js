@@ -48,7 +48,7 @@
                 y: origin.y,
                 direction: tokenRotation + angle,
                 distance: maxRange,
-                width: 0.001,
+                width: 1,
                 borderColor: borderColor,
                 fillColor: "#000000"
             };
