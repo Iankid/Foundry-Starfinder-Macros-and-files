@@ -30,7 +30,7 @@ const timeToLive  = 10000
 // DO NOT MODIFY 
 const hexSize = game.scenes.current.grid.size;
 const distancePerHex = game.scenes.current.grid.distance;
-const tokenRotation = (token.document.flags["about-face"] && (typeof token.document.flags["about-face"].direction) !== "undefined") ? token.document.flags["about-face"].direction : token.document.rotation;
+const tokenRotation = token.document.flags["about-face"]?.direction ?? token.document.rotation;
 const sfDrawingIDs = [];
 
 //generates the range circles, centering them on the token
