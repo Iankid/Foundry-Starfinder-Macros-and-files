@@ -12,6 +12,13 @@ if (!token) {
         return;
     }
 
+//Checks for hexgrid and type of hexgrid for proper rotation math
+const gridType = game.scenes.current.grid.type;
+if (gridType < 2 || gridType > 5) {
+	ui.notifications.info("Your grid type is not a hexgrid, and not supported!");
+	return;
+}
+
 //grabs x y coordinate of selected (starship) token, and translates it into center,center instead of top-left
 const origin = {
 	x: token.x + token.w / 2,
@@ -27,11 +34,25 @@ const timeToLive  = 10000
 
 // hexsize, distance per hex, and token rotation automatically grabbed from current scene to (mostly) ensure scaling if weird settings are encountered
 // array instantiated for later use in cleanup
-// DO NOT MODIFY 
+// tokenRotation defined for variable scoping
+// DO NOT MODIFY
 const hexSize = game.scenes.current.grid.size;
 const distancePerHex = game.scenes.current.grid.distance;
-const tokenRotation = token.document.flags["about-face"]?.direction ?? token.document.rotation;
 const sfDrawingIDs = [];
+let tokenRotation;
+
+//checks for row or column grid configuration
+//rows (type 2 and 3) assume token 'forward' defaults facing right of screen (matches flipmat)
+//columns(type 4 and 5) assume token 'forward' defaults facing top of screen (matches CRB)
+//has some extra, probably unnecessary, error catching just in case
+if (gridType == 4 || gridType == 5) {
+	tokenRotation = token.document.flags["about-face"]?.direction ?? token.document.rotation;
+} else if (gridType == 2 || gridType == 3) {
+	tokenRotation = token.document.flags["about-face"]?.direction ?? token.document.rotation + 90;
+} else {
+	ui.notifications.info("Unknown grid type, not supported.");
+	return;
+}
 
 //generates the range circles, centering them on the token
 //can modify the "strokeWidth" and "strokeAlpha" if desired, using whole numbers and decimals between 0 and 1, respectively
@@ -187,4 +208,4 @@ setTimeout(() => canvas.scene.deleteEmbeddedDocuments("Drawing", sfDrawingIDs), 
 //YOU HAVE BEEN WARNED
 //THIS WILL DELETE EXISTING DRAWINGS NOT CREATED BY THE MACRO
 //Now defunct, see loop above for non-destructive replacement. Left behind as a comment in case something goes horrifically wrong in the future.
-//setTimeout(() => {canvas.scene.deleteEmbeddedDocuments("Drawing", canvas.scene.drawings.map(d => d.id))}, time);
+//setTimeout(() => {canvas.scene.deleteEmbeddedDocuments("Drawing", canvas.scene.drawings.map(d => d.id))}, timeToLive);
