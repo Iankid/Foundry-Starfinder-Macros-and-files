@@ -418,26 +418,246 @@
         "items": [
           {
             "disposition": "FRIENDLY",
-            "items": []
+            "items": [
+              {
+                "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#5dc33d"
+              },
+              {
+                "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+                "icon": "fa-fire-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#d1333b"
+              },
+              {
+                "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+                "icon": "fa-rocket",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "attributes.maneuverability",
+                "icon": "fa-directions",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+                "icon": "fa-layer-group",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-up",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-left",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-right",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-down",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              }
+            ]
           },
           {
             "disposition": "NEUTRAL",
-            "items": []
+            "items": [
+              {
+                "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#5dc33d"
+              },
+              {
+                "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+                "icon": "fa-fire-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#d1333b"
+              },
+              {
+                "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+                "icon": "fa-rocket",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "attributes.maneuverability",
+                "icon": "fa-directions",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+                "icon": "fa-layer-group",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-up",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-left",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-right",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-down",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              }
+            ]
           },
           {
             "disposition": "HOSTILE",
-            "items": []
+            "items": [
+              {
+                "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#5dc33d"
+              },
+              {
+                "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+                "icon": "fa-fire-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#d1333b"
+              },
+              {
+                "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+                "icon": "fa-rocket",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "attributes.maneuverability",
+                "icon": "fa-directions",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+                "icon": "fa-layer-group",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-up",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-left",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-right",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-down",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              }
+            ]
           }
         ],
         "static": {
           "displayNameInTooltip": true,
-          "accentColor": "#d53ba1",
-          "useAccentColorForEverything": false,
+          "useAccentEverywhere": false,
+          "accentColor": "#59258e",
           "tokenDispositions": [
             "FRIENDLY",
             "NEUTRAL",
             "HOSTILE"
-          ]
+          ],
+          "useAccentColorForEverything": false
         }
       },
       "vehicle": {
