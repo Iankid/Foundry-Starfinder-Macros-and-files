@@ -97,31 +97,31 @@ let visionDialog = async function() {
             case "commlight":
                 update.light = {};
                 update.light.dim = 15;
-                update.light.bright = 13.5;
+                update.light.bright = 0;
                 update.light.angle = 90;
                 break;
             case "flashlight":
                 update.light = {};
                 update.light.dim = 20;
-                update.light.bright = 18.5;
+                update.light.bright = 0;
                 update.light.angle = 90;
                 break;
             case "lantern":
                 update.light = {};
                 update.light.dim = 10;
-                update.light.bright = 8.5;
+                update.light.bright = 0;
                 update.light.angle = 360;
                 break;
             case "spotlight":
                 update.light = {};
                 update.light.dim = 100;
-                update.light.bright = 100;
+                update.light.bright = 0;
                 update.light.angle = 90;
                 break;
             case "beacon":
                 update.light = {};
                 update.light.dim = 50;
-                update.light.bright = 48.5;
+                update.light.bright = 0;
                 update.light.angle = 360;
                 break;
         }
