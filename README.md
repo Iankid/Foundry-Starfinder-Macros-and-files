@@ -18,3 +18,7 @@ https://github.com/DocQuantic/spell-template
 https://gitlab.com/mkahvi/fvtt-micro-modules/-/tree/master/pf1-floating-health
 
 https://github.com/danimrath/foundryvtt-sfrpg-populator/releases/download/V0.2.3/module.json
+
+https://github.com/Bagenholm/sfrpg-globalattack
+
+https://github.com/Bagenholm/sfrpg-encountergen
