@@ -22,3 +22,5 @@ https://github.com/danimrath/foundryvtt-sfrpg-populator/releases/download/V0.2.3
 https://github.com/Bagenholm/sfrpg-globalattack
 
 https://github.com/Bagenholm/sfrpg-encountergen
+
+https://github.com/ian612/sfrpg-art-map
