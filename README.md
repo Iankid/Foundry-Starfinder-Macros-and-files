@@ -24,3 +24,5 @@ https://github.com/Bagenholm/sfrpg-globalattack
 https://github.com/Bagenholm/sfrpg-encountergen
 
 https://github.com/ian612/sfrpg-art-map
+
+https://github.com/Syberic/FVTT-Turn-Alert
