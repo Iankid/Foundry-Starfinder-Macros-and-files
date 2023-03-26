@@ -1,3 +1,11 @@
+// Recommended that you set Activation Cost to Reaction and the Limited Uses to 11/11.
+// It uses one when activating the ability and then drains 1 each time macro is activated.
+// When it reaches zero, it will turn itself off and set it back to maximum value.
+
+// Will not work with multiple tokens selected.
+// Will require that the user has the feat Nanite Integration.
+// If you change the name of the feat to reflect your choice, reflect the name change at line 22.
+
 main ()
 
 async function main() {
