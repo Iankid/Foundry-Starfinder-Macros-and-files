@@ -37,20 +37,32 @@ async function main() {
   let healing = user.system.attributes.hp.value + healfactor;
   const maxhp = user.system.attributes.hp.max;
 
-  if (nanites.isActive() == true)
-  //If there is still time, inform user of how long left and how much healing they get every round, else inform them that it has expired.
-  if(min > 0) {
-    ui.notifications.warn(`Seconds left of fast healing ${healing}: ${min*6}`);
-    if(healing >= maxhp) {
-      healing = maxhp;
+  if (nanites.isActive() == true) {
+    if (min == minmax-1) {
+      let resolve = user.system.attributes.rp.value;
+      if (resolve >= 1) {
+        resolve--;
+        user.update({"system.attributes.rp.value": resolve});
+      }
+      else {
+        ui.notifications.warn("You have run out of Resolve Points!");
+      }
     }
-    min--;
-    nanites.update({"system.uses.value": min});
-    user.update({"system.attributes.hp.value": healing});
-  }
-  else if(min == 0) {
-    ui.notifications.info(`Fast Healing has expired`);
-    nanites.setActive(false);
-    nanites.update({"system.uses.value": minmax});
+
+    //If there is still time, inform user of how long left and how much healing they get every round, else inform them that it has expired.
+    if(min > 0) {
+      ui.notifications.warn(`Seconds left of fast healing ${healfactor}: ${min*6}`);
+      if(healing >= maxhp) {
+        healing = maxhp;
+      }
+      min--;
+      nanites.update({"system.uses.value": min});
+      user.update({"system.attributes.hp.value": healing});
+    }
+    else if(min == 0) {
+      ui.notifications.info(`Fast Healing has expired`);
+      nanites.setActive(false);
+      nanites.update({"system.uses.value": minmax});
+    }
   }
 }
