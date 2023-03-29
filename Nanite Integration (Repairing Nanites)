@@ -4,7 +4,9 @@
 
 // Will not work with multiple tokens selected.
 // Will require that the user has the feat Nanite Integration.
-// If you change the name of the feat to reflect your choice, reflect the name change at line 22.
+// If you change the name of the feat to reflect your choice, reflect the name change at line 25.
+
+// If you want to change the icon used for the effect, change line 21
 
 main ()
 
@@ -16,6 +18,7 @@ async function main() {
     return;
   }
   const user = canvas.tokens.controlled[0].actor;
+  const icon = "systems/sfrpg/icons/spells/remove_radioactivity.webp";
   
   //Does user have the Nanite Integration feat?
   console.log("User of Repairing Nanites: ", user);
@@ -36,12 +39,36 @@ async function main() {
     healfactor = 1;
   let healing = user.system.attributes.hp.value + healfactor;
   const maxhp = user.system.attributes.hp.max;
+  
+  const floaterText = {
+    anchor: CONST.TEXT_ANCHOR_POINTS.CENTER,
+    direction: CONST.TEXT_ANCHOR_POINTS.TOP,
+    duration: 2500,
+    fontSize: 16,
+    fill: 0x00ff00,
+    stroke: 0x000000,
+    strokeThickness: 4,
+    jitter: 0.3
+  };
+  
+  const floaterLose = {
+    anchor: CONST.TEXT_ANCHOR_POINTS.CENTER,
+    direction: CONST.TEXT_ANCHOR_POINTS.BOTTOM,
+    duration: 2500,
+    fontSize: 16,
+    fill: 0xff0000,
+    stroke: 0x000000,
+    strokeThickness: 4,
+    jitter: 0.3
+  };
 
   if (nanites.isActive() == true) {
     if (min == minmax-1) {
       let resolve = user.system.attributes.rp.value;
       if (resolve >= 1) {
         resolve--;
+        token.toggleEffect(icon);
+        canvas.interface.createScrollingText(token.center, `+Nanite Regeneration`, floaterText);
         user.update({"system.attributes.rp.value": resolve});
       }
       else {
@@ -61,6 +88,8 @@ async function main() {
     }
     else if(min == 0) {
       ui.notifications.info(`Fast Healing has expired`);
+      token.toggleEffect(icon);
+      canvas.interface.createScrollingText(token.center, `-Nanite Regeneration`, floaterLose);
       nanites.setActive(false);
       nanites.update({"system.uses.value": minmax});
     }
