@@ -24,7 +24,7 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 const documentType = "Drawing";
 const flagType = "world";
 const flagName = "LosMacro";
-const timeLinesLast = 2000; // in milliseconds
+const time = 2000; // in milliseconds
 const targetToken = game.user.targets.first().document;
 const scene = game.scenes.current;
 const hexSize = game.scenes.current.grid.size;
