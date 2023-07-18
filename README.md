@@ -16,3 +16,13 @@ https://gitlab.com/mkahvi/fvtt-micro-modules/-/tree/master/sf-spellbook-details
 https://github.com/DocQuantic/spell-template
 
 https://gitlab.com/mkahvi/fvtt-micro-modules/-/tree/master/pf1-floating-health
+
+https://github.com/danimrath/foundryvtt-sfrpg-populator
+
+https://github.com/Bagenholm/sfrpg-globalattack
+
+https://github.com/Bagenholm/sfrpg-encountergen
+
+https://github.com/ian612/sfrpg-art-map
+
+https://github.com/Syberic/FVTT-Turn-Alert

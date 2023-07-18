@@ -1,0 +1,1877 @@
+{
+    "gmSettings": {
+      "default": {
+        "items": [
+          {
+            "disposition": "FRIENDLY",
+            "items": []
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": []
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": []
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": true,
+          "accentColor": "#43fa4d",
+          "useAccentColorForEverything": false,
+          "tokenDispositions": [
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ]
+        }
+      },
+      "character": {
+        "items": [
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max} SP: {attributes.sp.value}/{attributes.sp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>+<attributes.sp.value>; hpm=<attributes.hp.max>+<attributes.sp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#6681fc"
+              },
+              {
+                "value": "RP: {attributes.rp.value}/{attributes.rp.max}",
+                "icon": "fa-hand-rock",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ffee00"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed:",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max} SP: {attributes.sp.value}/{attributes.sp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>+<attributes.sp.value>; hpm=<attributes.hp.max>+<attributes.sp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#770b9e"
+              },
+              {
+                "value": "RP: {attributes.rp.value}/{attributes.rp.max}",
+                "icon": "fa-hand-rock",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ffee00"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed:",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max} SP: {attributes.sp.value}/{attributes.sp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>+<attributes.sp.value>; hpm=<attributes.hp.max>+<attributes.sp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#770b9e"
+              },
+              {
+                "value": "RP: {attributes.rp.value}/{attributes.rp.max}",
+                "icon": "fa-hand-rock",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ffee00"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed:",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": true,
+          "useAccentEverywhere": false,
+          "accentColor": "#474747",
+          "tokenDispositions": [
+            "OWNED",
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ]
+        }
+      },
+      "npc": {
+        "items": [
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              },
+              {
+                "value": "Old Style",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#0cee1e"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max} SP: {attributes.sp.value}/{attributes.sp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>+<attributes.sp.value>; hpm=<attributes.hp.max>+<attributes.sp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#6681fc"
+              },
+              {
+                "value": "RP: {attributes.rp.value}/{attributes.rp.max}",
+                "icon": "fa-hand-rock",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ffee00"
+              },
+              {
+                "value": "CMD: Mental {<abilities.cha.mod>+10+<details.level.value>+floor(<attributes.bab>/2)} Physical {<abilities.str.mod>+10+<details.level.value>+floor(<attributes.bab>/2)}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed:",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "Old Style",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#b7b99c"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              },
+              {
+                "value": "Old Style",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#b98221"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": true,
+          "useAccentEverywhere": false,
+          "accentColor": "#474747",
+          "tokenDispositions": [
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      },
+      "starship": {
+        "items": [
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#5dc33d"
+              },
+              {
+                "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+                "icon": "fa-fire-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#d1333b"
+              },
+              {
+                "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+                "icon": "fa-rocket",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "attributes.maneuverability",
+                "icon": "fa-directions",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+                "icon": "fa-layer-group",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-up",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-left",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-right",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-down",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#5dc33d"
+              },
+              {
+                "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+                "icon": "fa-fire-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#d1333b"
+              },
+              {
+                "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+                "icon": "fa-rocket",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "attributes.maneuverability",
+                "icon": "fa-directions",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+                "icon": "fa-layer-group",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-up",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-left",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-right",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-down",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "{ hp=<attributes.hp.value>; hpm=<attributes.hp.max>; concat(string(hp), \"/\", string(hpm), \" Hull\") }",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#5dc33d"
+              },
+              {
+                "value": "{ ct=<attributes.criticalThreshold.value>; dt=<attributes.damageThreshold.value>; concat(string(ct), \" CT  \", string(dt), \" DT\") }",
+                "icon": "fa-fire-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#d1333b"
+              },
+              {
+                "value": "{ speed=<attributes.speed.value>; concat(string(speed), \" Speed\") }",
+                "icon": "fa-rocket",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "attributes.maneuverability",
+                "icon": "fa-directions",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ tier=<details.tier>; concat(string(tier), \" Tier (\", string(floor(1.5 * tier)), \")\") }",
+                "icon": "fa-layer-group",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#808080"
+              },
+              {
+                "value": "{ shield=<quadrants.forward.shields.value>; ac=<quadrants.forward.ac.value>; tl=<quadrants.forward.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-up",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.port.shields.value>; ac=<quadrants.port.ac.value>; tl=<quadrants.port.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-left",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.starboard.shields.value>; ac=<quadrants.starboard.ac.value>; tl=<quadrants.starboard.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-right",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              },
+              {
+                "value": "{ shield=<quadrants.aft.shields.value>; ac=<quadrants.aft.ac.value>; tl=<quadrants.aft.targetLock.value>; concat(string(shield), \"|\", string(ac), \"AC|\", string(tl), \"TL\") }",
+                "icon": "fa-angle-double-down",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#678abf"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": true,
+          "useAccentEverywhere": false,
+          "accentColor": "#59258e",
+          "tokenDispositions": [
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      },
+      "vehicle": {
+        "items": [
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "Cover type: {attributes.cover}",
+                "icon": "fa-square-full",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#17c1c4"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \"Disabled\" : hpv < (hpm/4) ? \"Severely Broken\" : hpv < (hpm/2) ? \"Broken\" : hpv < 3*(hpm/4) ? \"Severely Damaged\" : hpv < (hpm)-1 ? \"Damaged\" : \"Undamaged\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "{attributes.speed.drive}. Full {attributes.speed.full}.",
+                "icon": "fa-shoe-prints",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00db37"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "Cover type: {attributes.cover}",
+                "icon": "fa-square-full",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#17c1c4"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \"Disabled\" : hpv < (hpm/4) ? \"Severely Broken\" : hpv < (hpm/2) ? \"Broken\" : hpv < 3*(hpm/4) ? \"Severely Damaged\" : hpv < (hpm)-1 ? \"Damaged\" : \"Undamaged\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "{attributes.speed.drive}. Full {attributes.speed.full}.",
+                "icon": "fa-shoe-prints",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00db37"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "Cover type: {attributes.cover}",
+                "icon": "fa-square-full",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#17c1c4"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \"Disabled\" : hpv < (hpm/4) ? \"Severely Broken\" : hpv < (hpm/2) ? \"Broken\" : hpv < 3*(hpm/4) ? \"Severely Damaged\" : hpv < (hpm)-1 ? \"Damaged\" : \"Undamaged\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "{attributes.speed.drive}. Full {attributes.speed.full}.",
+                "icon": "fa-shoe-prints",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00db37"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": true,
+          "useAccentEverywhere": false,
+          "accentColor": "#43fa4d",
+          "tokenDispositions": [
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      },
+      "drone": {
+        "items": [
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": true,
+          "useAccentEverywhere": false,
+          "accentColor": "#000000",
+          "tokenDispositions": [
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      },
+      "hazard": {
+        "items": [
+          {
+            "disposition": "FRIENDLY",
+            "items": []
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": []
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": []
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": true,
+          "accentColor": "#3614de",
+          "useAccentColorForEverything": false,
+          "tokenDispositions": [
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ]
+        }
+      },
+      "npc2": {
+        "items": [
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": true,
+          "useAccentEverywhere": false,
+          "accentColor": "#0967b8",
+          "tokenDispositions": [
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      }
+    },
+    "playerSettings": {
+      "default": {
+        "items": [
+          {
+            "disposition": "OWNED",
+            "items": []
+          },
+          {
+            "disposition": "FRIENDLY",
+            "items": []
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": []
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": []
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": "FRIENDLY",
+          "accentColor": "#2e0180",
+          "useAccentColorForEverything": false,
+          "tokenDispositions": [
+            "OWNED",
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ]
+        }
+      },
+      "character": {
+        "items": [
+          {
+            "disposition": "OWNED",
+            "items": [
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max} SP: {attributes.sp.value}/{attributes.sp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>+<attributes.sp.value>; hpm=<attributes.hp.max>+<attributes.sp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#770b9e"
+              },
+              {
+                "value": "RP: {attributes.rp.value}/{attributes.rp.max}",
+                "icon": "fa-hand-rock",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ffee00"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed:",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              }
+            ]
+          },
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>+<attributes.sp.value>; hpm=<attributes.hp.max>+<attributes.sp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>+<attributes.sp.value>; hpm=<attributes.hp.max>+<attributes.sp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>+<attributes.sp.value>; hpm=<attributes.hp.max>+<attributes.sp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": "FRIENDLY",
+          "useAccentEverywhere": false,
+          "accentColor": "#474747",
+          "tokenDispositions": [
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ]
+        }
+      },
+      "npc": {
+        "items": [
+          {
+            "disposition": "OWNED",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          },
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": "FRIENDLY",
+          "useAccentEverywhere": false,
+          "accentColor": "#474747",
+          "tokenDispositions": [
+            "OWNED",
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      },
+      "starship": {
+        "items": [
+          {
+            "disposition": "OWNED",
+            "items": []
+          },
+          {
+            "disposition": "FRIENDLY",
+            "items": []
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": []
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": []
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": "FRIENDLY",
+          "accentColor": "#1bd6bd",
+          "useAccentColorForEverything": false,
+          "tokenDispositions": [
+            "OWNED",
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ]
+        }
+      },
+      "vehicle": {
+        "items": [
+          {
+            "disposition": "OWNED",
+            "items": [
+              {
+                "value": "Cover type: {attributes.cover}",
+                "icon": "fa-square-full",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#17c1c4"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \"Disabled\" : hpv < (hpm/4) ? \"Severely Broken\" : hpv < (hpm/2) ? \"Broken\" : hpv < 3*(hpm/4) ? \"Severely Damaged\" : hpv < (hpm)-1 ? \"Damaged\" : \"Undamaged\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "{attributes.speed.drive}. Full {attributes.speed.full}.",
+                "icon": "fa-shoe-prints",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00db37"
+              }
+            ]
+          },
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \"Disabled\" : hpv < (hpm/4) ? \"Severely Broken\" : hpv < (hpm/2) ? \"Broken\" : hpv < 3*(hpm/4) ? \"Severely Damaged\" : hpv < (hpm)-1 ? \"Damaged\" : \"Undamaged\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \"Disabled\" : hpv < (hpm/4) ? \"Severely Broken\" : hpv < (hpm/2) ? \"Broken\" : hpv < 3*(hpm/4) ? \"Severely Damaged\" : hpv < (hpm)-1 ? \"Damaged\" : \"Undamaged\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \"Disabled\" : hpv < (hpm/4) ? \"Severely Broken\" : hpv < (hpm/2) ? \"Broken\" : hpv < 3*(hpm/4) ? \"Severely Damaged\" : hpv < (hpm)-1 ? \"Damaged\" : \"Undamaged\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": "FRIENDLY",
+          "useAccentEverywhere": false,
+          "accentColor": "#2e0180",
+          "tokenDispositions": [
+            "OWNED",
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      },
+      "drone": {
+        "items": [
+          {
+            "disposition": "OWNED",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          },
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": false,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": "FRIENDLY",
+          "useAccentEverywhere": false,
+          "accentColor": "#a2ee53",
+          "tokenDispositions": [
+            "OWNED",
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      },
+      "hazard": {
+        "items": [
+          {
+            "disposition": "OWNED",
+            "items": []
+          },
+          {
+            "disposition": "FRIENDLY",
+            "items": []
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": []
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": []
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": "OWNED",
+          "accentColor": "#8026fc",
+          "useAccentColorForEverything": false,
+          "tokenDispositions": [
+            "OWNED",
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ]
+        }
+      },
+      "npc2": {
+        "items": [
+          {
+            "disposition": "OWNED",
+            "items": [
+              {
+                "value": "CR {details.cr}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#54dacf"
+              },
+              {
+                "value": "EAC: {attributes.eac.value} KAC: {attributes.kac.value}",
+                "icon": "fa-shield-alt",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#bababa"
+              },
+              {
+                "value": "HP: {attributes.hp.value}/{attributes.hp.max}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              },
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#335837"
+              },
+              {
+                "value": "CMD: Mental {resources.altCmd.MMD.value} Physical {resources.altCmd.PMD.value}",
+                "icon": "fa-user-shield",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#383bff"
+              },
+              {
+                "value": "{ \nm=<attributes.speed.flying.baseManeuverability>;\nm=compareText(typeOf(m), \"null\") == 0 ? \"\" : m < 0 ? \"Clumsy\" : m > 0 ? \"Perfect\" : \"Average\";\nw=<attributes.speed.land.value>;\nw=compareText(typeOf(w), \"null\") == 0 ? '' : w > 0 ? concat(\"L:\", string(w), \" \") : \"\";\nf=<attributes.speed.flying.value>;\nf=compareText(typeOf(f), \"null\") == 0 ? '' : f > 0 ? concat(\"F:\", string(f), \" \", string(m), \" \") : \"\";\ns=<attributes.speed.swimming.value>;\ns=compareText(typeOf(s), \"null\") == 0 ? '' : s > 0 ? concat(\"S:\", string(s), \" \") : \"\";\nc=<attributes.speed.climbing.value>;\nc=compareText(typeOf(c), \"null\") == 0 ? '' : c > 0 ? concat(\"C:\", string(c), \" \") : \"\";\nb=<attributes.speed.burrowing.value>; \nb=compareText(typeOf(b), \"null\") == 0 ? '' : b > 0 ? concat(\"B:\", string(b), \" \") : \"\";\nconcat(w, f, s, c, b) \n}",
+                "icon": "$Speed",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#00ff40"
+              },
+              {
+                "value": "{details.biography.gmNotes}",
+                "icon": "",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#fe66b3"
+              }
+            ]
+          },
+          {
+            "disposition": "FRIENDLY",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "NEUTRAL",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          },
+          {
+            "disposition": "HOSTILE",
+            "items": [
+              {
+                "value": "{hpv=<attributes.hp.value>; hpm=<attributes.hp.max>; hpv <= 0 ? \" Incapacitated\" : hpv < (hpm/5) ? \"Nearly Incapacitated\" : hpv < 2*(hpm/5) ? \"Badly Injured\" : hpv < 3*(hpm/5) ? \"Injured\" : hpv < 4*(hpm/5) ? \"Barely Injured\" : \"Healthy\"}",
+                "icon": "fa-heart",
+                "isFunction": false,
+                "expression": true,
+                "isNumber": false,
+                "color": "#ff0000"
+              }
+            ]
+          }
+        ],
+        "static": {
+          "displayNameInTooltip": "NONE",
+          "useAccentEverywhere": false,
+          "accentColor": "#ecbbac",
+          "tokenDispositions": [
+            "OWNED",
+            "FRIENDLY",
+            "NEUTRAL",
+            "HOSTILE"
+          ],
+          "useAccentColorForEverything": false
+        }
+      }
+    }
+  }

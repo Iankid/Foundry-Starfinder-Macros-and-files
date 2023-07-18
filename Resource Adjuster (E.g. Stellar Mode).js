@@ -2,11 +2,11 @@
 Adds or Subracts 1 usage from a listed Starfinder resource.
 Change "TYPE" and "SUBTYPE" to those listed in the resource details, keeping " "
     • SELECT A TOKEN FIRST
-    • Click to subtract
-    • Shift-Click to add
+    • Click to add
+    • Shift-Click to subtract
     • Alt-Click to reset
-    • Ctrl-Click for minimum value
-    • Ctrl-Shift-Click for maximum
+    • Ctrl-Click for maximum value
+    • Ctrl-Shift-Click for minimum value
 */
 (()=> {
     if (!token)
@@ -15,8 +15,8 @@ Change "TYPE" and "SUBTYPE" to those listed in the resource details, keeping " "
     }
 
     // Set the type and subtype of the resource
-    const resourceType = "solarian"; // e.g. solarian
-    const resourceSubtype = "stellarMode"; // e.g. stellarMode
+    const resourceType = "solarian"; // e.g. solarian , evolutionist
+    const resourceSubtype = "stellarMode"; // e.g. stellarMode , evolutionTrack
 
     const resource = token.actor.getResource(resourceType, resourceSubtype);
 
@@ -34,21 +34,35 @@ Change "TYPE" and "SUBTYPE" to those listed in the resource details, keeping " "
     if (event.altKey)
     {
         // Reset
+        ui.notifications.info("Resource points have been reset");
         return token.actor.setResourceBaseValue(resourceType, resourceSubtype, 0);
     }
 
     if (event.ctrlKey)
     {
         if (event.shiftKey) {
-            // Maximum
-            return token.actor.setResourceBaseValue(resourceType, resourceSubtype, max);
-        } else {
             // Minimum
+            ui.notifications.info("Resource points have been set to the minimum");
             return token.actor.setResourceBaseValue(resourceType, resourceSubtype, min);
+        } else {
+            // Maximum
+            ui.notifications.info("Resource points have been set to the maximum");
+            return token.actor.setResourceBaseValue(resourceType, resourceSubtype, max);
         }
     }
 
     if (event.shiftKey)
+    {
+        // Decrement
+        if ((min || min === 0) && base <= min)
+        {
+            return ui.notifications.error(`${resource.name} already at the minimum value of ${Math.abs(min)} for resource`);
+        }
+
+        ui.notifications.info("Resource points have been reduced by one");
+        newBase = Math.max(base - 1, min);
+    }
+    else
     {
         // Increment
         if ((max || max === 0) && base >= max)
@@ -56,17 +70,8 @@ Change "TYPE" and "SUBTYPE" to those listed in the resource details, keeping " "
             return ui.notifications.error(`${resource.name} already at the maximum value of ${Math.abs(max)} for resource`);
         }
 
+        ui.notifications.info("Resource points have been increased by one");
         newBase = Math.min(base + 1, max);
-    }
-    else
-    {
-        // Decrement
-        if ((min || min === 0) && base <= min)
-        {
-            return ui.notifications.error(`${resource.name} already at the maximum value of ${Math.abs(min)} for resource`);
-        }
-
-        newBase = Math.max(base - 1, min);
     }
 
     return token.actor.setResourceBaseValue(resourceType, resourceSubtype, newBase);
