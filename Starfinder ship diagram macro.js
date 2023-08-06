@@ -36,7 +36,7 @@ else {
     ssp    = ship.data.data.quadrants.starboard.shields.value;
     maxssp = ship.data.data.attributes.shields.evenDistribution;
  
-    await canvas.drawings.get(hullPoints).data.document.update({text: hp + '/' + maxhp});
+    await canvas.drawings.get(hullPoints).document.update({text: hp + '/' + maxhp});
     if(hp <= 0) {
         await canvas.drawings.get(hullPoints).document.update({textColor: "#FF0000"});
     }
@@ -47,7 +47,7 @@ else {
         await canvas.drawings.get(hullPoints).document.update({textColor: "#FFFFFF"});
     }
  
-    await canvas.drawings.get(forwardShield).data.document.update({text: fsp + '/' + maxfsp});
+    await canvas.drawings.get(forwardShield).document.update({text: fsp + '/' + maxfsp});
     if(fsp <= 0) {
         await canvas.drawings.get(forwardShield).document.update({textColor: "#FF0000"});
     }
@@ -58,7 +58,7 @@ else {
         await canvas.drawings.get(forwardShield).document.update({textColor: "#FFFFFF"});
     }
  
-    await canvas.drawings.get(aftShield).data.document.update({text: asp + '/' + maxasp});
+    await canvas.drawings.get(aftShield).document.update({text: asp + '/' + maxasp});
     if(asp <= 0) {
         await canvas.drawings.get(aftShield).document.update({textColor: "#FF0000"});
     }
@@ -69,7 +69,7 @@ else {
         await canvas.drawings.get(aftShield).document.update({textColor: "#FFFFFF"});
     }
  
-    await canvas.drawings.get(portShield).data.document.update({text: psp + '/' + maxpsp});
+    await canvas.drawings.get(portShield).document.update({text: psp + '/' + maxpsp});
     if(psp <= 0) {
         await canvas.drawings.get(portShield).document.update({textColor: "#FF0000"});
     }
@@ -80,7 +80,7 @@ else {
         await canvas.drawings.get(portShield).document.update({textColor: "#FFFFFF"});
     }
  
-    await canvas.drawings.get(starboardShield).data.document.update({text: ssp + '/' + maxssp});
+    await canvas.drawings.get(starboardShield).document.update({text: ssp + '/' + maxssp});
     if(ssp <= 0) {
         await canvas.drawings.get(starboardShield).document.update({textColor: "#FF0000"});
     }
