@@ -1,0 +1,215 @@
+/*
+Starfinder Quadrant and Ranging Macro
+Updated for Foundry V11.308, Starfinder 0.25.2
+
+Based on work by Sputt and CptTwinkie, with help from Zhell, Freeze, honeybadger, and GrahamNegative
+Read comment lines above code blocks before attempting to modify
+@RZ#1917 or @spacemanian on Discord if you're having issues modifying to suit needs
+*/
+
+//Checks to make sure a token is selected, otherwise reminds
+if (!token) {
+        ui.notifications.info("Select a ship token on the active scene!");
+        return;
+    }
+
+//Checks for hexgrid and type of hexgrid for proper rotation math
+const gridType = game.scenes.current.grid.type;
+if (gridType < 2 || gridType > 5) {
+	ui.notifications.info("Your grid type is not a hexgrid, and not supported!");
+	return;
+}
+
+//grabs x y coordinate of selected (starship) token, and translates it into center,center instead of top-left
+const origin = {
+	x: token.x + token.w / 2,
+	y: token.y + token.h / 2
+    };
+
+//presets, ranges given in terms of hexes, colors defined by hexcode
+//can be modified if desired, needs to always be set in pairs though, will automatically generate more circles and cross-hatches, quadrants are fixed
+//timeToLive how long it stays on screen, in milliseconds (10000 = 10 seconds)
+const ranges = [5, 10, 20, 40]
+const colors = ["#40FF40", "#ffff40", "#ff4040", "#000000"]
+const timeToLive  = 10000
+
+// hexsize, distance per hex, and token rotation automatically grabbed from current scene to (mostly) ensure scaling if weird settings are encountered
+// array instantiated for later use in cleanup
+// tokenRotation defined for variable scoping
+// DO NOT MODIFY
+const hexSize = game.scenes.current.grid.size;
+const distancePerHex = game.scenes.current.grid.distance;
+const sfDrawingIDs = [];
+let tokenRotation;
+
+//checks for row or column grid configuration
+//rows (type 2 and 3) assume token 'forward' defaults facing right of screen (matches flipmat)
+//columns(type 4 and 5) assume token 'forward' defaults facing top of screen (matches CRB)
+//has some extra, probably unnecessary, error catching just in case
+if (gridType == 4 || gridType == 5) {
+	tokenRotation = token.document.flags["about-face"]?.direction + 90?? token.document.rotation;
+} else if (gridType == 2 || gridType == 3) {
+	tokenRotation = token.document.flags["about-face"]?.direction + 90 ?? token.document.rotation + 90;
+} else {
+	ui.notifications.info("Unknown grid type, not supported.");
+	return;
+}
+
+// Correction factor for hexagon size
+const pxMod = 0.87
+
+//generates the range circles, centering them on the token
+//can modify the "strokeWidth" and "strokeAlpha" if desired, using whole numbers and decimals between 0 and 1, respectively
+for (let i = ranges.length; i > 0; --i){
+    await canvas.scene.createEmbeddedDocuments("Drawing", [{
+        shape: {
+            type: "e", 
+            width: (ranges[i-1]+0.5)*2*pxMod*(hexSize/distancePerHex), 
+            height: (ranges[i-1]+0.5)*2*pxMod*(hexSize/distancePerHex)}, 
+        strokeColor:colors[i-1],
+        strokeWidth:3,
+        strokeAlpha:1,
+        x: origin.x - (ranges[i-1]+0.5)*pxMod*(hexSize/distancePerHex),
+		y: origin.y - (ranges[i-1]+0.5)*pxMod*(hexSize/distancePerHex),
+		flags: {world: {SFRangeAndQuad: true}}
+        }]);
+};
+
+//generates the cross-hatch lines for quadrants in offset pairs
+//again, "strokeWidth" and "strokeAlpha" are the modifiers, do not modify the "width" value
+for (let i = ranges.length; i > 0; --i){
+    await canvas.scene.createEmbeddedDocuments("Drawing", [{
+        shape: {
+            type: "r", 
+            width: 1, 
+            height: (ranges[i-1]+0.5)*2*pxMod*(hexSize/distancePerHex)}, 
+        strokeColor:colors[i-1],
+        strokeWidth:3,
+        strokeAlpha:1,
+        x: origin.x,
+        y: origin.y - (ranges[i-1]+0.5)*pxMod*(hexSize/distancePerHex),
+		rotation:330 + tokenRotation,
+		flags: {world: {SFRangeAndQuad: true}}
+        }]);
+    await canvas.scene.createEmbeddedDocuments("Drawing", [{
+        shape: {
+            type: "r", 
+            width: 1, 
+            height: (ranges[i-1]+0.5)*2*pxMod*(hexSize/distancePerHex)}, 
+        strokeColor:colors[i-1],
+        strokeWidth:3,
+        strokeAlpha:1,
+        x: origin.x,
+        y: origin.y - (ranges[i-1]+0.5)*pxMod*(hexSize/distancePerHex),
+		rotation:30 + tokenRotation,
+		flags: {world: {SFRangeAndQuad: true}}
+        }]);
+};
+
+//bad trigonometry math to find coordinates for quadrants
+const triangleHeight = (ranges[3]+0.5) * pxMod * (hexSize/distancePerHex) * Math.sqrt(3)
+const triangleWidth = (ranges[3]+0.5) * pxMod * (hexSize/distancePerHex)
+
+//handles left quadrant
+await canvas.scene.createEmbeddedDocuments("Drawing", [{
+	x: origin.x,
+	y: origin.y,
+	shape: {
+		type: "p", 
+		points: [
+			0, 0,
+			triangleWidth * -1, triangleHeight,
+			triangleHeight * -1, 0,
+			triangleWidth * -1, triangleHeight * -1,
+			0,0
+			]
+		}, 
+	fillColor:"#00FFFF",
+	fillAlpha: .1,
+	fillType: 1,
+	strokeWidth:0,
+	rotation: tokenRotation,
+	flags: {world: {SFRangeAndQuad: true}}
+	}]);
+
+//handles right quadrant
+await canvas.scene.createEmbeddedDocuments("Drawing", [{
+	x: origin.x,
+	y: origin.y,
+	shape: {
+		type: "p", 
+		points: [
+			0, 0,
+			triangleWidth, triangleHeight,
+			triangleHeight, 0,
+			triangleWidth, triangleHeight * -1,
+			0,0
+			]
+		}, 
+	fillColor:"#00FFFF",
+	fillAlpha: .1,
+	fillType: 1,
+	strokeWidth:0,
+	rotation: tokenRotation,
+	flags: {world: {SFRangeAndQuad: true}}
+	}]);
+
+/*
+rear quadrant
+note the height variables may be reversed from 'expected' due to how foundry handles grid
+negative means towards top and left of screen from center of object, positive means towards bottom and right of screen from center of object
+only thing to modify here is "fillColor" and "fillAlpha"
+*/
+await canvas.scene.createEmbeddedDocuments("Drawing", [{
+	x: origin.x,
+	y: origin.y,
+	shape: {
+		type: "p", 
+		points: [
+			0, 0,
+			triangleWidth, triangleHeight,
+			triangleWidth * -1, triangleHeight,
+			0,0
+			]
+		}, 
+	fillColor:"#ff4040",
+	fillAlpha: .1,
+	fillType: 1,
+	strokeWidth:0,
+	rotation: tokenRotation,
+	flags: {world: {SFRangeAndQuad: true}}
+	}]);
+
+//front quadrant, same with "fillColor" and "fillAlpha"
+await canvas.scene.createEmbeddedDocuments("Drawing", [{
+	x: origin.x,
+	y: origin.y,
+	shape: {
+		type: "p", 
+		points: [
+			0, 0,
+			triangleWidth  * -1, triangleHeight * -1,
+			triangleWidth, triangleHeight * -1,
+			0,0
+			]
+		}, 
+	fillColor:"#40FF40",
+	fillAlpha: .1,
+	fillType: 1,
+	strokeWidth:0,
+	rotation: tokenRotation,
+	flags: {world: {SFRangeAndQuad: true}}
+    }]);
+    
+//iterates through the list of all tagged drawings, grabbing ids for deletion
+//there's basically zero reason you should ever modify this barring significant Foundry changes
+for (let i = canvas.scene.drawings.filter(s => s.getFlag("world", "SFRangeAndQuad")).length; i > 0; --i){
+	sfDrawingIDs.push(canvas.scene.drawings.filter(s => s.getFlag("world", "SFRangeAndQuad"))[i-1]._id);
+}
+setTimeout(() => canvas.scene.deleteEmbeddedDocuments("Drawing", sfDrawingIDs), timeToLive);
+
+//CLEARS ALL DRAWINGS ON SCREEN AFTER 10 SECONDS
+//YOU HAVE BEEN WARNED
+//THIS WILL DELETE EXISTING DRAWINGS NOT CREATED BY THE MACRO
+//Now defunct, see loop above for non-destructive replacement. Left behind as a comment in case something goes horrifically wrong in the future.
+//setTimeout(() => {canvas.scene.deleteEmbeddedDocuments("Drawing", canvas.scene.drawings.map(d => d.id))}, timeToLive);
